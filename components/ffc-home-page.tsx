@@ -22,12 +22,12 @@ const experienceFeatures = [
   {
     icon: Clock,
     title: "3-Hour Private Booking",
-    description: "Enjoy three exclusive hours at our private rooftop venue for your candlelight dinner or celebration"
+    description: "Enjoy three exclusive hours at our private rooftop venue for your birthday celebration"
   },
   {
     icon: Gift,
-    title: "Celebration Cake Included",
-    description: "Complimentary birthday/anniversary cake & non-alcoholic champagne with every package"
+    title: "Birthday Cake Included",
+    description: "Complimentary birthday cake & non-alcoholic champagne with every package"
   },
   {
     icon: Camera,
@@ -37,7 +37,7 @@ const experienceFeatures = [
   {
     icon: Music,
     title: "Romantic Ambiance",
-    description: "Soft romantic music, candlelight setting & complete privacy for couples"
+    description: "Soft romantic music, beautiful lighting & complete privacy for couples"
   }
 ];
 
@@ -45,43 +45,43 @@ const experienceFeatures = [
 const faqs = [
   {
     question: "What is HIVY and where is it located in Surat?",
-    answer: "HIVY is Surat's premier couples-only private celebration venue—the best spot for candlelight dinners, romantic rooftop dining, birthday surprises, and anniversary celebrations in Surat, Gujarat."
+    answer: "HIVY is Surat's premier birthday surprise venue—the best spot for romantic birthday celebrations, surprise birthday parties, and private birthday dinners for couples in Surat, Gujarat."
   },
   {
-    question: "How do I book a candlelight dinner or birthday surprise at HIVY?",
-    answer: `Simply WhatsApp ${siteConfig.phone} or call directly. Share your occasion (candlelight dinner, birthday surprise, anniversary celebration, proposal), preferred date, and number of guests. We'll confirm your booking instantly with a custom quote for your romantic celebration.`
+    question: "How do I book a birthday surprise at HIVY?",
+    answer: `Simply WhatsApp ${siteConfig.phone} or call directly. Share your birthday celebration details, preferred date, and number of guests. We'll confirm your booking instantly with a custom quote for your birthday surprise.`
   },
   {
-    question: "What are the prices for candlelight dinner packages in Surat?",
-    answer: "Our romantic celebration packages start from affordable rates and include premium rooftop setup, welcome drinks, decorations, and gourmet dining. Contact us for current pricing on candlelight dinner packages, birthday surprise setups, and anniversary celebration deals."
+    question: "What are the prices for birthday surprise packages in Surat?",
+    answer: "Our birthday surprise packages start from affordable rates and include premium rooftop setup, welcome drinks, decorations, and birthday cake. Contact us for current pricing on birthday surprise setups, midnight birthday celebrations, and couple birthday packages."
   },
   {
-    question: "Can I book HIVY for a marriage proposal or engagement?",
-    answer: "Absolutely! HIVY is Surat's most popular proposal venue. Our romantic proposal setups feature heart arches, fairy lights, rose petals, and champagne—perfect for creating an unforgettable 'yes' moment. We've hosted 3000+ successful proposals and engagements."
+    question: "Can I book HIVY for a midnight birthday surprise?",
+    answer: "Absolutely! HIVY is Surat's most popular midnight birthday surprise venue. Our midnight birthday setups feature stunning decorations, fairy lights, rose petals, and cake-cutting at 12 AM—perfect for creating unforgettable birthday memories."
   },
   {
-    question: "What occasions can I celebrate at HIVY Surat?",
-    answer: "We specialize in candlelight dinners, birthday surprises (for boyfriend, girlfriend, husband, wife), anniversary celebrations (1st, 10th, 25th), marriage proposals, engagement parties, Valentine's Day dinners, pre-wedding shoots, pregnancy announcements, and romantic date nights."
+    question: "What types of birthday celebrations can I plan at HIVY Surat?",
+    answer: "We specialize in birthday surprises for boyfriend, girlfriend, husband, wife, romantic birthday dinners, midnight birthday celebrations, surprise birthday parties, birthday room decorations, and unique birthday setups for couples."
   },
   {
-    question: "What are the time slots available for candlelight dinner booking?",
-    answer: "Our romantic celebration time slots are from 6 PM to 11 PM. Weekend slots for candlelight dinners and birthday surprises book fast—we recommend advance booking to secure your preferred date at Surat's best romantic restaurant."
+    question: "What are the time slots available for birthday surprise booking?",
+    answer: "Our birthday celebration time slots are from 12 PM to 11 PM. Weekend slots for birthday surprises book fast—we recommend advance booking to secure your preferred date at Surat's best birthday surprise venue."
   },
   {
-    question: "Can I customize the decorations for my birthday surprise or anniversary?",
-    answer: "Yes! All our celebration packages are fully customizable. Choose from balloon decorations, flower arrangements, themed backdrops, personalized messages, cakes, and more for your birthday room decoration, anniversary setup, or proposal arrangement."
+    question: "Can I customize the decorations for my birthday surprise?",
+    answer: "Yes! All our birthday packages are fully customizable. Choose from balloon decorations, flower arrangements, themed backdrops, personalized messages, custom cakes, and more for your birthday room decoration and surprise setup."
   },
   {
     question: "Is HIVY a private venue for couples only?",
-    answer: "Yes, HIVY is 100% private and exclusively for couples. You'll have complete privacy during your booking slot—no other guests. It's the safest, most romantic, and couple-friendly celebration venue in Surat with a 4.9★ rating."
+    answer: "Yes, HIVY is 100% private and exclusively for couples. You'll have complete privacy during your birthday celebration—no other guests. It's the safest, most romantic, and couple-friendly birthday venue in Surat with a 4.9★ rating."
   },
   {
-    question: "What areas in Surat does HIVY serve for romantic celebrations?",
-    answer: "We welcome couples from all Surat areas including Vesu, Adajan, Athwa, Piplod, City Light, Althan, Varachha, Pal, Dumas Road, and more. HIVY is centrally located as the best candlelight dinner restaurant serving all of Surat."
+    question: "What areas in Surat does HIVY serve for birthday celebrations?",
+    answer: "We welcome couples from all Surat areas including Vesu, Adajan, Athwa, Piplod, City Light, Althan, Varachha, Pal, Dumas Road, and more. HIVY is centrally located as the best birthday surprise venue serving all of Surat."
   },
   {
     question: "What is the cancellation and rescheduling policy?",
-    answer: "Rescheduling must be informed at least one day prior. Your candlelight dinner or birthday surprise booking can be rescheduled within one month, subject to availability. Please note: No Refund Policy Applicable."
+    answer: "Rescheduling must be informed at least one day prior. Your birthday surprise booking can be rescheduled within one month, subject to availability. Please note: No Refund Policy Applicable."
   }
 ];
 
@@ -90,20 +90,20 @@ const galleryItems = [
   // Featured Images from packages
   { type: 'image', src: '/packages/swing-of-love/images/28.png', alt: 'Swing of Love Setup Surat', title: 'Swing of LOVE', subtitle: 'Premium Package', featured: true },
   { type: 'image', src: '/packages/boho-chic/images/46.png', alt: 'BoHo Chic Setup Surat', title: 'BoHo Chic', featured: false },
-  { type: 'image', src: '/packages/fairy-tale-proposals/2.png', alt: 'Fairy Tale Proposals Surat', title: 'Fairy Tale Proposals', featured: false },
+  { type: 'image', src: '/packages/fairy-tale-proposals/2.png', alt: 'Birthday Setup Surat', title: 'Magical Birthday Setup', featured: false },
   { type: 'video', src: '/videos/InShot_20250111_162317353.mp4', alt: 'Romantic celebration video Surat', title: 'Celebration Moments', featured: false },
   { type: 'image', src: '/packages/tent-of-romance/images/12.png', alt: 'Tent of Romance Setup Surat', title: 'Tent of Romance', featured: false },
   { type: 'image', src: '/packages/swing-of-love/images/29.png', alt: 'Swing setup Surat', title: 'Swing Décor', featured: false },
-  { type: 'video', src: '/videos/InShot_20250217_151234749.mp4', alt: 'Anniversary celebration video Surat', title: 'Anniversary Video', featured: false },
+  { type: 'video', src: '/videos/InShot_20250217_151234749.mp4', alt: 'Birthday celebration video Surat', title: 'Birthday Video', featured: false },
   { type: 'image', src: '/packages/boho-chic/images/47.png', alt: 'Bohemian ambiance cafe Surat', title: 'Boho Ambiance', featured: false },
-  { type: 'image', src: '/packages/fairy-tale-proposals/3.png', alt: 'Fairy tale setup decoration Surat', title: 'Magical Setup', featured: false },
+  { type: 'image', src: '/packages/fairy-tale-proposals/3.png', alt: 'Birthday decoration Surat', title: 'Magical Setup', featured: false },
   { type: 'image', src: '/packages/tent-of-romance/images/13.png', alt: 'Romantic tent decoration Surat', title: 'Romantic Décor', featured: false },
   { type: 'video', src: '/videos/VID_20251027_181020858.mp4', alt: 'Rooftop celebration reel Surat', title: 'Rooftop Vibes', featured: false },
   { type: 'image', src: '/packages/swing-of-love/images/30.png', alt: 'Romantic swing setup Surat', title: 'Love Swing', featured: false },
   { type: 'image', src: '/packages/boho-chic/images/48.png', alt: 'Night romantic setup Surat', title: 'Night Setup', featured: false },
   { type: 'image', src: '/packages/fairy-tale-proposals/4.png', alt: 'Evening romantic celebration Surat', title: 'Evening Magic', featured: false },
   { type: 'video', src: '/videos/VID_20251120_191425995.mp4', alt: 'Birthday reel Surat', title: 'Birthday Reel', featured: false },
-  { type: 'image', src: '/packages/tent-of-romance/images/14.png', alt: 'Proposal setup Surat', title: 'Proposal Setup', featured: false },
+  { type: 'image', src: '/packages/tent-of-romance/images/14.png', alt: 'Birthday surprise setup Surat', title: 'Birthday Surprise Setup', featured: false },
 ];
 
 // Gallery Section Component
@@ -128,10 +128,10 @@ function GallerySection() {
             <ImageIcon className="h-4 w-4 mr-2" /> Romantic Celebration Gallery
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-            Candlelight Dinners & Celebrations at HIVY Surat
+            Birthday Celebrations at HIVY Surat
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Real moments from birthday surprises, anniversary dinners, marriage proposals & romantic date nights at Surat's best couples-only celebration venue.
+            Real moments from birthday surprises, midnight birthdays & romantic birthday celebrations at Surat's best couples-only birthday venue.
           </p>
         </div>
 
@@ -245,13 +245,13 @@ function BlogSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
-            Romantic Celebration Blog
+            Birthday Surprise Blog
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-            Birthday Surprise & Anniversary Ideas in Surat
+            Birthday Surprise Ideas in Surat
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Tips, guides, and romantic date ideas to help you plan the perfect candlelight dinner, birthday surprise, or proposal in Surat
+            Tips, guides, and romantic ideas to help you plan the perfect birthday surprise or midnight birthday celebration in Surat
           </p>
         </div>
 
@@ -316,8 +316,8 @@ export default function FFCHomePage() {
   
   // Hero slider images
   const heroSlides = [
-    { src: '/images/hero/slider2.png', alt: 'Rooftop Celebration Setup with Fairy Lights Surat' },
-    { src: '/images/hero/slider1.png', alt: 'Romantic Candlelight Dinner Setup at HIVY - Place for Celebrations Surat' },
+    { src: '/images/hero/slider2.png', alt: 'Rooftop Birthday Celebration Setup with Fairy Lights Surat' },
+    { src: '/images/hero/slider1.png', alt: 'Romantic Birthday Surprise Setup at HIVY - Birthday Surprise Planners Surat' },
   ];
 
   // Auto-slide effect
@@ -376,13 +376,13 @@ export default function FFCHomePage() {
                 <Sparkles className="h-4 w-4 mr-2" /> Couples Only Experience in Surat
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-serif">
-                HIVY - Place for Celebrations
+                HIVY - Birthday Surprise Planners
               </h1>
               <p className="text-xl md:text-2xl mb-4 text-white/90 max-w-2xl">
                 {siteConfig.tagline}
               </p>
               <p className="text-lg mb-8 text-white/80 max-w-xl">
-                Surat's premier private rooftop venue for romantic candlelight dinners, birthday surprises, anniversary celebrations, marriage proposals & intimate date nights. 100% private, couples-only experience.
+                Surat's premier private rooftop venue for romantic birthday surprises, midnight birthday celebrations & surprise birthday parties. 100% private, couples-only experience.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -433,13 +433,13 @@ export default function FFCHomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-16">
             <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
-              Candlelight Dinner & Celebration Packages
+              Birthday Surprise Packages
             </Badge>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 font-serif">
-              Romantic Celebration Packages in Surat
+              Birthday Celebration Packages in Surat
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-              5 unique private rooftop setups for candlelight dinners, birthday surprises, anniversary celebrations & proposals in Surat
+              5 unique private rooftop setups for birthday surprises, midnight birthdays & romantic birthday celebrations in Surat
             </p>
           </div>
           
@@ -490,13 +490,13 @@ export default function FFCHomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
-              Romantic Celebration Services in Surat
+              Birthday Celebration Services in Surat
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              Perfect For Every Romantic Celebration in Surat
+              Perfect For Every Birthday Celebration in Surat
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              From intimate candlelight dinners to grand marriage proposals, surprise birthday parties to anniversary celebrations—we create magical moments for couples at our private rooftop venue in Surat.
+              From intimate birthday dinners to surprise birthday parties, midnight birthday celebrations to romantic couple birthdays—we create magical birthday moments for couples at our private rooftop venue in Surat.
             </p>
           </div>
           
@@ -526,10 +526,10 @@ export default function FFCHomePage() {
               Why Couples Choose HIVY Surat
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              The Complete Romantic Date Experience
+              The Complete Birthday Celebration Experience
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Every couple deserves a private, romantic celebration. Our packages include everything for an unforgettable candlelight dinner or birthday surprise.
+              Every couple deserves a private, romantic celebration. Our packages include everything for an unforgettable birthday surprise.
             </p>
           </div>
           
@@ -553,13 +553,13 @@ export default function FFCHomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4 bg-rose-700/20 text-rose-300 border-rose-700/30">
-                Romantic Dinner Menu
+                Birthday Special Menu
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif">
-                Gourmet Cuisine for Candlelight Dinners
+                Gourmet Cuisine for Birthday Celebrations
               </h2>
               <p className="text-gray-300 mb-8">
-                Curated café-style delicacies crafted for romantic date nights, anniversary dinners & special celebrations in Surat
+                Curated café-style delicacies crafted for birthday celebrations & special occasions in Surat
               </p>
               
               <div className="space-y-4">
@@ -621,13 +621,13 @@ export default function FFCHomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
-              <MapPin className="h-4 w-4 mr-2" /> Candlelight Dinner & Celebrations Near You
+              <MapPin className="h-4 w-4 mr-2" /> Birthday Celebrations Near You
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              Best Romantic Restaurant Serving All Areas in Surat
+              Best Birthday Surprise Venue Serving All Areas in Surat
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Whether you're looking for a candlelight dinner near Vesu, birthday surprise venue in Adajan, or anniversary restaurant in Athwa—we serve couples from all areas of Surat
+              Whether you're looking for a birthday surprise venue near Vesu, birthday celebration in Adajan, or birthday party in Athwa—we serve couples from all areas of Surat
             </p>
           </div>
           
@@ -659,13 +659,13 @@ export default function FFCHomePage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
-              FAQ - Candlelight Dinner & Celebrations
+              FAQ - Birthday Celebrations
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-              Common Questions About Romantic Celebrations in Surat
+              Common Questions About Birthday Celebrations in Surat
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Everything you need to know about booking candlelight dinners, birthday surprises & anniversary celebrations at HIVY
+              Everything you need to know about booking birthday surprises & midnight birthday celebrations at HIVY
             </p>
           </div>
           
@@ -688,10 +688,10 @@ export default function FFCHomePage() {
       <section className="py-20 bg-gradient-to-r from-rose-700 to-rose-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
-            Book Your Candlelight Dinner or Birthday Surprise Today
+            Book Your Birthday Surprise Today
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Create unforgettable romantic memories at Surat's best private celebration venue. Perfect for anniversaries, proposals, date nights & special occasions.
+            Create unforgettable birthday memories at Surat's best private celebration venue. Perfect for birthdays, midnight surprises & special occasions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer">

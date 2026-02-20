@@ -29,13 +29,13 @@ const navigation = [
 
 const serviceLinks = [
   { name: 'Birthday Surprise', href: '/services/birthday-surprise' },
-  { name: 'Anniversary', href: '/services/anniversary-celebration' },
-  { name: 'Proposal', href: '/services/proposal' },
-  { name: 'Candlelight Dinner', href: '/services/candlelight-dinner' },
-  { name: 'Surprise Date', href: '/services/surprise-date' },
-  { name: 'Pre-Wedding Shoot', href: '/services/pre-wedding-shoot' },
-  { name: 'Baby Moments', href: '/services/baby-moments' },
-  { name: "Valentine's Week", href: '/services/valentines-week' },
+  { name: 'Birthday for Boyfriend', href: '/birthday-surprise-for-boyfriend-surat' },
+  { name: 'Birthday for Girlfriend', href: '/birthday-surprise-for-girlfriend-surat' },
+  { name: 'Birthday for Husband', href: '/birthday-surprise-for-husband-surat' },
+  { name: 'Birthday for Wife', href: '/birthday-surprise-for-wife-surat' },
+  { name: 'Midnight Birthday Surprise', href: '/midnight-birthday-surprise-surat' },
+  { name: 'Birthday Room Decoration', href: '/birthday-room-decoration-surat' },
+  { name: 'Birthday Balloon Decoration', href: '/birthday-balloon-decoration-surat' },
 ];
 
 export function FFCHeader() {
