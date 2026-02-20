@@ -121,10 +121,10 @@ function GallerySection() {
   const videoCount = galleryItems.filter(item => item.type === 'video').length;
 
   return (
-    <section className="py-20 bg-gradient-to-br from-stone-100 via-white to-stone-50">
+    <section className="py-20 bg-gradient-to-br from-rose-50 via-white to-rose-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+          <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
             <ImageIcon className="h-4 w-4 mr-2" /> Romantic Celebration Gallery
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
@@ -141,8 +141,8 @@ function GallerySection() {
             variant={activeFilter === 'all' ? 'default' : 'outline'}
             onClick={() => setActiveFilter('all')}
             className={activeFilter === 'all' 
-              ? 'bg-stone-1000 hover:bg-yellow-800 text-white' 
-              : 'border-yellow-200 text-yellow-900 hover:bg-stone-100'}
+              ? 'bg-rose-700 hover:bg-rose-800 text-white' 
+              : 'border-rose-200 text-rose-700 hover:bg-rose-50'}
           >
             <Sparkles className="h-4 w-4 mr-2" />
             All ({galleryItems.length})
@@ -151,8 +151,8 @@ function GallerySection() {
             variant={activeFilter === 'photos' ? 'default' : 'outline'}
             onClick={() => setActiveFilter('photos')}
             className={activeFilter === 'photos' 
-              ? 'bg-stone-1000 hover:bg-yellow-800 text-white' 
-              : 'border-yellow-200 text-yellow-900 hover:bg-stone-100'}
+              ? 'bg-rose-700 hover:bg-rose-800 text-white' 
+              : 'border-rose-200 text-rose-700 hover:bg-rose-50'}
           >
             <ImageIcon className="h-4 w-4 mr-2" />
             Photos ({photoCount})
@@ -161,8 +161,8 @@ function GallerySection() {
             variant={activeFilter === 'videos' ? 'default' : 'outline'}
             onClick={() => setActiveFilter('videos')}
             className={activeFilter === 'videos' 
-              ? 'bg-stone-1000 hover:bg-yellow-800 text-white' 
-              : 'border-yellow-200 text-yellow-900 hover:bg-stone-100'}
+              ? 'bg-rose-700 hover:bg-rose-800 text-white' 
+              : 'border-rose-200 text-rose-700 hover:bg-rose-50'}
           >
             <Play className="h-4 w-4 mr-2" />
             Videos ({videoCount})
@@ -202,14 +202,14 @@ function GallerySection() {
                     loop
                     playsInline
                     preload="metadata"
-                    className="w-full h-full object-cover bg-stone-200"
+                    className="w-full h-full object-cover bg-rose-100"
                     onMouseEnter={(e) => e.currentTarget.play()}
                     onMouseLeave={(e) => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
                     onLoadedData={(e) => { e.currentTarget.currentTime = 0.5; }}
                   />
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                     <div className="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Play className="h-5 w-5 text-yellow-800 ml-1" fill="currentColor" />
+                      <Play className="h-5 w-5 text-rose-700 ml-1" fill="currentColor" />
                     </div>
                   </div>
                   <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
@@ -224,7 +224,7 @@ function GallerySection() {
         {/* View More Button */}
         <div className="text-center mt-10">
           <Link href="/virtual-tour">
-            <Button className="bg-gradient-to-r from-stone-1000 to-stone-500 hover:from-yellow-800 hover:to-yellow-700 text-white px-8 py-6 text-lg">
+            <Button className="bg-gradient-to-r from-rose-700 to-rose-600 hover:from-rose-800 hover:to-rose-700 text-white px-8 py-6 text-lg">
               <Camera className="h-5 w-5 mr-2" />
               View Virtual Tour
               <ArrowRight className="h-5 w-5 ml-2" />
@@ -244,7 +244,7 @@ function BlogSection() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+          <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
             Romantic Celebration Blog
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
@@ -259,7 +259,7 @@ function BlogSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`}>
-              <Card className="overflow-hidden h-full hover:shadow-lg transition-all duration-300 group border-stone-200">
+              <Card className="overflow-hidden h-full hover:shadow-lg transition-all duration-300 group border-rose-200">
                 <div className="relative h-48">
                   <Image
                     src={post.coverImage}
@@ -267,12 +267,12 @@ function BlogSection() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <Badge className="absolute top-3 left-3 bg-stone-1000 text-white">
+                  <Badge className="absolute top-3 left-3 bg-rose-700 text-white">
                     {post.category}
                   </Badge>
                 </div>
                 <CardContent className="p-5">
-                  <h3 className="font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-yellow-800 transition-colors">
+                  <h3 className="font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-rose-700 transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-sm text-gray-600 mb-4 line-clamp-2">
@@ -300,7 +300,7 @@ function BlogSection() {
         {/* View More Button */}
         <div className="text-center">
           <Link href="/blog">
-            <Button className="bg-gradient-to-r from-stone-1000 to-stone-500 hover:from-yellow-800 hover:to-yellow-700 text-white px-8 py-6 text-lg">
+            <Button className="bg-gradient-to-r from-rose-700 to-rose-600 hover:from-rose-800 hover:to-rose-700 text-white px-8 py-6 text-lg">
               View More Articles
               <ArrowRight className="h-5 w-5 ml-2" />
             </Button>
@@ -333,7 +333,7 @@ export default function FFCHomePage() {
       <FFCHeader />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-yellow-800 via-stone-500 to-yellow-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-rose-700 via-rose-600 to-rose-800 text-white overflow-hidden">
         {/* Background Image Slider */}
         <div className="absolute inset-0">
           {heroSlides.map((slide, index) => (
@@ -387,7 +387,7 @@ export default function FFCHomePage() {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/packages">
-                  <Button size="lg" className="bg-white text-yellow-800 hover:bg-stone-100 text-lg px-8 py-6 w-full sm:w-auto">
+                  <Button size="lg" className="bg-white text-rose-700 hover:bg-rose-50 text-lg px-8 py-6 w-full sm:w-auto">
                     <Gift className="h-5 w-5 mr-2" />
                     View Packages
                   </Button>
@@ -422,17 +422,17 @@ export default function FFCHomePage() {
       </section>
 
       {/* Mobile Booking Form */}
-      <section className="lg:hidden bg-stone-100 py-8">
+      <section className="lg:hidden bg-rose-50 py-8">
         <div className="container mx-auto px-4">
           <FFCBookingForm />
         </div>
       </section>
 
       {/* Packages Section */}
-      <section className="py-12 md:py-20 bg-gradient-to-b from-stone-100 to-white">
+      <section className="py-12 md:py-20 bg-gradient-to-b from-rose-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 md:mb-16">
-            <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+            <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
               Candlelight Dinner & Celebration Packages
             </Badge>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 font-serif">
@@ -446,26 +446,27 @@ export default function FFCHomePage() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6">
             {getVisiblePackages().map((pkg, index) => (
               <Link key={pkg.id} href={`/packages/${pkg.slug}`}>
-                <Card className="h-full hover:shadow-xl transition-all hover:-translate-y-1 border-stone-200 group overflow-hidden">
-                  <div className="aspect-square bg-gradient-to-br from-stone-200 to-stone-100 relative overflow-hidden">
+                <Card className="h-full hover:shadow-xl transition-all hover:-translate-y-1 border-rose-200 group overflow-hidden">
+                  <div className="aspect-square bg-gradient-to-br from-rose-100 to-rose-50 relative overflow-hidden">
                     <Image
                       src={pkg.thumbnail}
                       alt={pkg.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
                     />
-                    <Badge className="absolute top-2 left-2 bg-yellow-800 text-white text-xs">
+                    <Badge className="absolute top-2 left-2 bg-rose-700 text-white text-xs">
                       Setup {index + 1}
                     </Badge>
                   </div>
                   <CardContent className="p-2 md:p-4">
-                    <h3 className="font-semibold text-sm md:text-lg mb-1 group-hover:text-yellow-800 transition-colors line-clamp-2">
+                    <h3 className="font-semibold text-sm md:text-lg mb-1 group-hover:text-rose-700 transition-colors line-clamp-2">
                       {pkg.name}
                     </h3>
                     <p className="text-gray-600 text-xs md:text-sm line-clamp-2 mb-2 hidden md:block">
                       {pkg.shortDescription}
                     </p>
-                    <p className="text-base md:text-xl font-bold text-yellow-800">
+                    <p className="text-base md:text-xl font-bold text-rose-700">
                       {formatPrice(pkg.price)}
                     </p>
                   </CardContent>
@@ -476,7 +477,7 @@ export default function FFCHomePage() {
           
           <div className="text-center mt-6 md:mt-10">
             <Link href="/packages">
-              <Button size="lg" className="bg-gradient-to-r from-yellow-800 to-yellow-700 hover:from-yellow-900 hover:to-yellow-800 text-white">
+              <Button size="lg" className="bg-gradient-to-r from-rose-700 to-rose-600 hover:from-rose-800 hover:to-rose-700 text-white">
                 View All Packages <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
             </Link>
@@ -488,7 +489,7 @@ export default function FFCHomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+            <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
               Romantic Celebration Services in Surat
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
@@ -501,7 +502,7 @@ export default function FFCHomePage() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {serviceCategories.map((service) => (
-              <Card key={service.slug} className="h-full border-stone-200 group">
+              <Card key={service.slug} className="h-full border-rose-200 group">
                 <CardContent className="p-4 md:p-6 text-center">
                   <div className="text-3xl md:text-4xl mb-3 md:mb-4">{service.emoji}</div>
                   <h3 className="font-semibold text-sm md:text-lg mb-1 md:mb-2">
@@ -521,7 +522,7 @@ export default function FFCHomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+            <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
               Why Couples Choose HIVY Surat
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
@@ -535,8 +536,8 @@ export default function FFCHomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {experienceFeatures.map((feature, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 rounded-full bg-stone-200 flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="h-8 w-8 text-yellow-800" />
+                <div className="w-16 h-16 rounded-full bg-rose-100 flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="h-8 w-8 text-rose-700" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                 <p className="text-gray-600 text-sm">{feature.description}</p>
@@ -551,7 +552,7 @@ export default function FFCHomePage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-stone-1000/20 text-yellow-300 border-stone-1000/30">
+              <Badge className="mb-4 bg-rose-700/20 text-rose-300 border-rose-700/30">
                 Romantic Dinner Menu
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif">
@@ -563,8 +564,8 @@ export default function FFCHomePage() {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-stone-1000/20 flex items-center justify-center flex-shrink-0">
-                    <Wine className="h-5 w-5 text-yellow-300" />
+                  <div className="w-10 h-10 rounded-full bg-rose-700/20 flex items-center justify-center flex-shrink-0">
+                    <Wine className="h-5 w-5 text-rose-300" />
                   </div>
                   <div>
                     <h4 className="font-semibold">Welcome Drink</h4>
@@ -573,8 +574,8 @@ export default function FFCHomePage() {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-stone-1000/20 flex items-center justify-center flex-shrink-0">
-                    <Utensils className="h-5 w-5 text-yellow-300" />
+                  <div className="w-10 h-10 rounded-full bg-rose-700/20 flex items-center justify-center flex-shrink-0">
+                    <Utensils className="h-5 w-5 text-rose-300" />
                   </div>
                   <div>
                     <h4 className="font-semibold">Cheese Fondue</h4>
@@ -583,8 +584,8 @@ export default function FFCHomePage() {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-stone-1000/20 flex items-center justify-center flex-shrink-0">
-                    <Gift className="h-5 w-5 text-yellow-300" />
+                  <div className="w-10 h-10 rounded-full bg-rose-700/20 flex items-center justify-center flex-shrink-0">
+                    <Gift className="h-5 w-5 text-rose-300" />
                   </div>
                   <div>
                     <h4 className="font-semibold">Dessert with Chocolate Bite</h4>
@@ -594,7 +595,7 @@ export default function FFCHomePage() {
               </div>
               
               <Link href="/menu" className="inline-block mt-8">
-                <Button size="lg" className="bg-stone-1000 hover:bg-yellow-800 text-white">
+                <Button size="lg" className="bg-rose-700 hover:bg-rose-800 text-white">
                   View Full Menu <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
               </Link>
@@ -616,10 +617,10 @@ export default function FFCHomePage() {
       </section>
 
       {/* Areas We Serve */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-rose-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+            <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
               <MapPin className="h-4 w-4 mr-2" /> Candlelight Dinner & Celebrations Near You
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
@@ -635,7 +636,7 @@ export default function FFCHomePage() {
               <Link 
                 key={area.slug}
                 href={`/${area.slug}`}
-                className="px-4 py-2 bg-white rounded-full text-gray-700 hover:bg-yellow-800 hover:text-white transition-colors border border-stone-300"
+                className="px-4 py-2 bg-white rounded-full text-gray-700 hover:bg-rose-700 hover:text-white transition-colors border border-rose-200"
               >
                 {area.name}
               </Link>
@@ -654,10 +655,10 @@ export default function FFCHomePage() {
       <BlogSection />
 
       {/* FAQ Section */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-rose-50">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+            <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
               FAQ - Candlelight Dinner & Celebrations
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
@@ -670,7 +671,7 @@ export default function FFCHomePage() {
           
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border border-stone-200 px-6">
+              <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border border-rose-200 px-6">
                 <AccordionTrigger className="text-left font-medium hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
@@ -684,7 +685,7 @@ export default function FFCHomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-800 to-yellow-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-rose-700 to-rose-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
             Book Your Candlelight Dinner or Birthday Surprise Today

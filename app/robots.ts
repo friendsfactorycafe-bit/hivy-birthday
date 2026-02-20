@@ -1,6 +1,6 @@
 /**
- * HIVY - PLACE FOR CELEBRATIONS - SEO OPTIMIZED ROBOTS.TXT
- * Domain: hivy.co.in
+ * Birthday Surprise Surat - SEO OPTIMIZED ROBOTS.TXT
+ * Domain: birthdaysurprisesurat.com
  * 
  * Configuration for search engine crawlers:
  * - Allow all public pages including service keywords & area pages
@@ -15,13 +15,13 @@
  * - 6 Package pages
  * - 25 Blog posts
  * 
- * Last Updated: January 2026
+ * Last Updated: February 2026
  */
 
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://hivy.co.in";
+  const baseUrl = "https://birthdaysurprisesurat.com";
   
   return {
     rules: [
@@ -35,8 +35,6 @@ export default function robots(): MetadataRoute.Robots {
           "/contact",
           "/menu",
           "/virtual-tour",
-          "/privacy-policy",
-          "/terms-conditions",
           // Package pages
           "/packages",
           "/packages/*",

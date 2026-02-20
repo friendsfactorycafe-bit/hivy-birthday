@@ -100,10 +100,10 @@ export function FFCGallery({
   const videoCount = galleryItems.filter(item => item.type === 'video').length;
 
   return (
-    <section className={`py-12 md:py-16 bg-gradient-to-br from-stone-100 via-white to-stone-50 ${className}`}>
+    <section className={`py-12 md:py-16 bg-gradient-to-br from-rose-100 via-white to-rose-50 ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <Badge className="mb-4 bg-stone-200 text-yellow-900 border-stone-300">
+          <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
             <ImageIcon className="h-4 w-4 mr-2" /> {title}
           </Badge>
           <h2 className="text-2xl md:text-3xl font-bold mb-2 font-serif">
@@ -121,8 +121,8 @@ export function FFCGallery({
               variant={activeFilter === 'all' ? 'default' : 'outline'} 
               onClick={() => setActiveFilter('all')}
               className={activeFilter === 'all' 
-                ? 'bg-stone-1000 hover:bg-yellow-800 text-white' 
-                : 'border-yellow-200 text-yellow-900 hover:bg-stone-100'}
+                ? 'bg-rose-900 hover:bg-rose-700 text-white' 
+                : 'border-rose-200 text-rose-900 hover:bg-rose-100'}
             >
               All ({photoCount + videoCount})
             </Button>
@@ -130,8 +130,8 @@ export function FFCGallery({
               variant={activeFilter === 'photos' ? 'default' : 'outline'} 
               onClick={() => setActiveFilter('photos')}
               className={activeFilter === 'photos' 
-                ? 'bg-stone-1000 hover:bg-yellow-800 text-white' 
-                : 'border-yellow-200 text-yellow-900 hover:bg-stone-100'}
+                ? 'bg-rose-900 hover:bg-rose-700 text-white' 
+                : 'border-rose-200 text-rose-900 hover:bg-rose-100'}
             >
               <ImageIcon className="h-4 w-4 mr-2" />
               Photos ({photoCount})
@@ -140,8 +140,8 @@ export function FFCGallery({
               variant={activeFilter === 'videos' ? 'default' : 'outline'} 
               onClick={() => setActiveFilter('videos')}
               className={activeFilter === 'videos' 
-                ? 'bg-stone-1000 hover:bg-yellow-800 text-white' 
-                : 'border-yellow-200 text-yellow-900 hover:bg-stone-100'}
+                ? 'bg-rose-900 hover:bg-rose-700 text-white' 
+                : 'border-rose-200 text-rose-900 hover:bg-rose-100'}
             >
               <Play className="h-4 w-4 mr-2" />
               Videos ({videoCount})
@@ -187,7 +187,7 @@ export function FFCGallery({
                   />
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <Play className="h-4 w-4 md:h-5 md:w-5 text-yellow-800 ml-1" fill="currentColor" />
+                      <Play className="h-4 w-4 md:h-5 md:w-5 text-rose-700 ml-1" fill="currentColor" />
                     </div>
                   </div>
                   <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">

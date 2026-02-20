@@ -1,6 +1,6 @@
 /**
- * HIVY - PLACE FOR CELEBRATIONS - SEO OPTIMIZED SITEMAP
- * Domain: hivy.co.in
+ * Birthday Surprise Surat - SEO OPTIMIZED SITEMAP
+ * Domain: birthdaysurprisesurat.com
  * 
  * Total Pages: Comprehensive sitemap including:
  * - 1 Homepage (priority 1.0)
@@ -11,7 +11,7 @@
  * - 40 Surat area pages (priority 0.7)
  * - 25 Blog posts (priority 0.6)
  * 
- * Last Updated: January 2026
+ * Last Updated: February 2026
  */
 
 import { MetadataRoute } from "next";
@@ -23,7 +23,7 @@ import {
 } from "@/lib/ffc-config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://hivy.co.in";
+  const baseUrl = "https://birthdaysurprisesurat.com";
   const currentDate = new Date().toISOString();
   
   const entries: MetadataRoute.Sitemap = [];
@@ -47,8 +47,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/services', priority: 0.9, freq: 'weekly' as const },
     { path: '/virtual-tour', priority: 0.7, freq: 'monthly' as const },
     { path: '/blog', priority: 0.8, freq: 'weekly' as const },
-    { path: '/privacy-policy', priority: 0.3, freq: 'yearly' as const },
-    { path: '/terms-conditions', priority: 0.3, freq: 'yearly' as const },
   ];
   
   staticPages.forEach((page) => {

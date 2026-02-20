@@ -22,11 +22,11 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#78716C", // Warm Stone for HIVY
+  themeColor: "#BE123C", // Romantic Rose for HIVY
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hivy.co.in"),
+  metadataBase: new URL("https://birthdaysurprisesurat.com"),
   title: {
     default: "HIVY - Place for Celebrations Surat | Best Romantic Celebration Venue | Candlelight Dinners & Birthday Surprises",
     template: "%s | HIVY - Place for Celebrations Surat",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     "anniversary dinner surat",
     "valentines day surat"
   ],
-  authors: [{ name: "HIVY - Place for Celebrations", url: "https://hivy.co.in" }],
+  authors: [{ name: "HIVY - Place for Celebrations", url: "https://birthdaysurprisesurat.com" }],
   creator: "HIVY - Place for Celebrations",
   publisher: "HIVY - Place for Celebrations",
   formatDetection: {
@@ -66,14 +66,14 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: "https://hivy.co.in",
+    canonical: "https://birthdaysurprisesurat.com",
   },
   category: "Restaurant",
   classification: "Romantic Celebration Venue",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://hivy.co.in",
+    url: "https://birthdaysurprisesurat.com",
     siteName: "HIVY - Place for Celebrations",
     title: "HIVY - Place for Celebrations Surat | Best Romantic Celebration Venue",
     description: "Best romantic celebration venue in Surat. Birthday surprises, candlelight dinners, anniversaries, proposals. Premium private experiences.",
@@ -134,18 +134,18 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://hivy.co.in/#business",
+      "@id": "https://birthdaysurprisesurat.com/#business",
       "name": "HIVY - Place for Celebrations",
       "alternateName": "HIVY Surat",
       "description": "Best romantic celebration venue in Surat, Gujarat. Birthday surprises, candlelight dinners, anniversary celebrations, proposals, pre-wedding shoots. Premium private experiences.",
-      "url": "https://hivy.co.in",
+      "url": "https://birthdaysurprisesurat.com",
       "telephone": "+91-9727027278",
-      "email": "hello@hivy.co.in",
+      "email": "hello@birthdaysurprisesurat.com",
       "priceRange": "₹₹₹",
       "currenciesAccepted": "INR",
       "paymentAccepted": "Cash, Credit Card, UPI, GPay, PhonePe",
       "image": [
-        "https://hivy.co.in/images/og-image.jpg"
+        "https://birthdaysurprisesurat.com/images/og-image.jpg"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -256,30 +256,30 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://hivy.co.in/#website",
-      "url": "https://hivy.co.in",
+      "@id": "https://birthdaysurprisesurat.com/#website",
+      "url": "https://birthdaysurprisesurat.com",
       "name": "HIVY - Place for Celebrations",
       "description": "Best romantic celebration venue in Surat",
       "publisher": {
-        "@id": "https://hivy.co.in/#business"
+        "@id": "https://birthdaysurprisesurat.com/#business"
       },
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://hivy.co.in/services?q={search_term_string}"
+          "urlTemplate": "https://birthdaysurprisesurat.com/services?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": "Organization",
-      "@id": "https://hivy.co.in/#organization",
+      "@id": "https://birthdaysurprisesurat.com/#organization",
       "name": "HIVY - Place for Celebrations",
-      "url": "https://hivy.co.in",
+      "url": "https://birthdaysurprisesurat.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://hivy.co.in/icon.svg",
+        "url": "https://birthdaysurprisesurat.com/icon.svg",
         "width": "512",
         "height": "512"
       },
@@ -293,25 +293,25 @@ const jsonLd = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://hivy.co.in/#breadcrumb",
+      "@id": "https://birthdaysurprisesurat.com/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://hivy.co.in"
+          "item": "https://birthdaysurprisesurat.com"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://hivy.co.in/services"
+          "item": "https://birthdaysurprisesurat.com/services"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Packages",
-          "item": "https://hivy.co.in/packages"
+          "item": "https://birthdaysurprisesurat.com/packages"
         }
       ]
     }
