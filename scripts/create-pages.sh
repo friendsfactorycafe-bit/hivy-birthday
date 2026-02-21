@@ -7,7 +7,6 @@ SLUGS=(
   "private-birthday-celebration-surat"
   "intimate-birthday-celebration-surat"
   "birthday-dinner-date-surat"
-  "birthday-rooftop-celebration-surat"
   "couples-birthday-party-surat"
   "birthday-evening-setup-surat"
   "luxury-birthday-surprise-surat"

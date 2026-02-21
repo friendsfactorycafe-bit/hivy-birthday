@@ -18,7 +18,7 @@ export interface GalleryItem {
 // SEO-friendly gallery items using actual images from /Gallery/ folder
 export const galleryItems: GalleryItem[] = [
   // Featured Images
-  { type: 'image', src: '/Gallery/Copy%20of%20IMG_20251030_123944870.jpg', alt: 'Romantic rooftop birthday setup in Surat', title: 'Romantic Rooftop', subtitle: 'Birthday Setup', featured: true },
+  { type: 'image', src: '/Gallery/Copy%20of%20IMG_20251030_123944870.jpg', alt: 'Romantic birthday setup in Surat', title: 'Romantic Setup', subtitle: 'Birthday Setup', featured: true },
   { type: 'image', src: '/Gallery/Copy%20of%20IMG_20251027_192642940.jpg', alt: 'Birthday candlelight dinner Surat', title: 'Candlelight Dinner', featured: false },
   { type: 'image', src: '/Gallery/Copy%20of%20IMG_20251030_121457885.jpg', alt: 'Romantic birthday dinner setup Surat', title: 'Evening Romance', featured: false },
   { type: 'image', src: '/Gallery/Copy%20of%20IMG_20251104_193044089.jpg', alt: 'Birthday surprise decoration Surat', title: 'Birthday Surprise', featured: false },
@@ -47,7 +47,7 @@ export const galleryItems: GalleryItem[] = [
   { type: 'image', src: '/Gallery/IMG_20251121_211547289.jpg', alt: 'Birthday celebration decoration Surat', title: 'Birthday Decor', featured: false },
   { type: 'image', src: '/Gallery/IMG_20251121_211601011.jpg', alt: 'Birthday moments Surat', title: 'Birthday Moments', featured: false },
   { type: 'image', src: '/Gallery/20240606_115610_83c3a646-4519-42ae-963f-ac9559192a48.JPG', alt: 'Candlelight birthday dinner Surat', title: 'Couple Dinner', featured: false },
-  { type: 'image', src: '/Gallery/20240606_115611_2ac66f83-ed91-4852-9a56-e20e310f3825.JPG', alt: 'Rooftop birthday dinner Surat', title: 'Rooftop Dinner', featured: false },
+  { type: 'image', src: '/Gallery/20240606_115611_2ac66f83-ed91-4852-9a56-e20e310f3825.JPG', alt: 'Romantic birthday dinner Surat', title: 'Romantic Dinner', featured: false },
   { type: 'image', src: '/Gallery/20240606_115611_3f21729e-a7a9-4735-83dd-6e1e0a2a9cda.JPG', alt: 'Private birthday dining Surat', title: 'Private Dining', featured: false },
   { type: 'image', src: '/Gallery/20240820_192632_6a3b8062-9f1f-400d-a614-edd1a7829df4.JPG', alt: 'Romantic birthday venue Surat', title: 'Romantic Venue', featured: false },
   { type: 'image', src: '/Gallery/20240830_213839_1C3E1D35-D0E1-4453-B49D-369681BC9A80.JPG', alt: 'Birthday celebration venue Surat', title: 'Celebration Venue', featured: false },

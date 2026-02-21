@@ -22,7 +22,7 @@ const experienceFeatures = [
   {
     icon: Clock,
     title: "3-Hour Private Booking",
-    description: "Enjoy three exclusive hours at our private rooftop venue for your birthday celebration"
+    description: "Enjoy three exclusive hours at our private celebration venue for your birthday"
   },
   {
     icon: Gift,
@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: "What are the prices for birthday surprise packages in Surat?",
-    answer: "Our birthday surprise packages start from affordable rates and include premium rooftop setup, welcome drinks, decorations, and birthday cake. Contact us for current pricing on birthday surprise setups, midnight birthday celebrations, and couple birthday packages."
+    answer: "Our birthday surprise packages start from affordable rates and include premium venue setup, welcome drinks, decorations, and birthday cake. Contact us for current pricing on birthday surprise setups, midnight birthday celebrations, and couple birthday packages."
   },
   {
     question: "Can I book HIVY for a midnight birthday surprise?",
@@ -98,7 +98,7 @@ const galleryItems = [
   { type: 'image', src: '/packages/boho-chic/images/47.png', alt: 'Bohemian ambiance cafe Surat', title: 'Boho Ambiance', featured: false },
   { type: 'image', src: '/packages/fairy-tale-proposals/3.png', alt: 'Birthday decoration Surat', title: 'Magical Setup', featured: false },
   { type: 'image', src: '/packages/tent-of-romance/images/13.png', alt: 'Romantic tent decoration Surat', title: 'Romantic Décor', featured: false },
-  { type: 'video', src: '/videos/VID_20251027_181020858.mp4', alt: 'Rooftop celebration reel Surat', title: 'Rooftop Vibes', featured: false },
+  { type: 'video', src: '/videos/VID_20251027_181020858.mp4', alt: 'Birthday celebration reel Surat', title: 'Party Vibes', featured: false },
   { type: 'image', src: '/packages/swing-of-love/images/30.png', alt: 'Romantic swing setup Surat', title: 'Love Swing', featured: false },
   { type: 'image', src: '/packages/boho-chic/images/48.png', alt: 'Night romantic setup Surat', title: 'Night Setup', featured: false },
   { type: 'image', src: '/packages/fairy-tale-proposals/4.png', alt: 'Evening romantic celebration Surat', title: 'Evening Magic', featured: false },
@@ -316,7 +316,7 @@ export default function FFCHomePage() {
   
   // Hero slider images
   const heroSlides = [
-    { src: '/images/hero/slider2.png', alt: 'Rooftop Birthday Celebration Setup with Fairy Lights Surat' },
+    { src: '/images/hero/slider2.png', alt: 'Birthday Celebration Setup with Fairy Lights Surat' },
     { src: '/images/hero/slider1.png', alt: 'Romantic Birthday Surprise Setup at HIVY - Birthday Surprise Planners Surat' },
   ];
 
@@ -382,7 +382,7 @@ export default function FFCHomePage() {
                 {siteConfig.tagline}
               </p>
               <p className="text-lg mb-8 text-white/80 max-w-xl">
-                Surat's premier private rooftop venue for romantic birthday surprises, midnight birthday celebrations & surprise birthday parties. 100% private, couples-only experience.
+                Surat's premier private venue for romantic birthday surprises, midnight birthday celebrations & surprise birthday parties. 100% private, couples-only experience.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -439,7 +439,7 @@ export default function FFCHomePage() {
               Birthday Celebration Packages in Surat
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-              5 unique private rooftop setups for birthday surprises, midnight birthdays & romantic birthday celebrations in Surat
+              5 unique private setups for birthday surprises, midnight birthdays & romantic birthday celebrations in Surat
             </p>
           </div>
           
@@ -496,7 +496,7 @@ export default function FFCHomePage() {
               Perfect For Every Birthday Celebration in Surat
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              From intimate birthday dinners to surprise birthday parties, midnight birthday celebrations to romantic couple birthdays—we create magical birthday moments for couples at our private rooftop venue in Surat.
+              From intimate birthday dinners to surprise birthday parties, midnight birthday celebrations to romantic couple birthdays—we create magical birthday moments for couples at our private celebration venue in Surat.
             </p>
           </div>
           

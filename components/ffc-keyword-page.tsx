@@ -88,11 +88,9 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
               </div>
             </div>
             
-            {/* Hero Visual */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-72 h-72 rounded-full bg-white/10 flex items-center justify-center">
-                <span className="text-[7rem]">{service.emoji}</span>
-              </div>
+            {/* Hero Booking Form */}
+            <div className="hidden lg:block">
+              <FFCBookingForm variant="hero" pageTitle={keyword.title} />
             </div>
           </div>
         </div>

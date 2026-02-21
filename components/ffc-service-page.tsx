@@ -77,11 +77,9 @@ export default function FFCServicePage({ service }: ServicePageProps) {
               </div>
             </div>
             
-            {/* Hero Visual */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-80 h-80 rounded-full bg-white/10 flex items-center justify-center">
-                <span className="text-[8rem]">{service.emoji}</span>
-              </div>
+            {/* Hero Booking Form */}
+            <div className="hidden lg:block">
+              <FFCBookingForm variant="hero" pageTitle={service.name} />
             </div>
           </div>
         </div>

@@ -276,7 +276,7 @@ function generatePackagesSection(domain: DomainConfig, keyword: KeywordConfig, k
             <li class="flex items-center gap-2">✓ 2 Pound Custom Cake</li>
             <li class="flex items-center gap-2">✓ 5-Course Dinner</li>
             <li class="flex items-center gap-2">✓ Full Photography Coverage</li>
-            <li class="flex items-center gap-2">✓ Private Rooftop/Pool Access</li>
+            <li class="flex items-center gap-2">✓ Private Venue/Pool Access</li>
             <li class="flex items-center gap-2">✓ Guitarist Performance</li>
           </ul>
         </div>
@@ -318,13 +318,6 @@ function generateDetailedSection(domain: DomainConfig, keyword: KeywordConfig, k
       <p class="mb-4">There's something inherently romantic about the soft, warm glow of candlelight. It creates an intimate atmosphere that encourages connection and conversation. Our <strong>${kw}</strong> experiences in ${city} harness this timeless element to create unforgettable romantic evenings.</p>
       
       <p class="mb-4">Each ${kw} we organize features carefully placed candles of various sizes and styles, creating a mesmerizing play of light and shadow. Combined with soft music, elegant table settings, and exquisite cuisine, our ${kw} dinners provide the perfect setting for romance to flourish.</p>
-    `;
-  } else if (keyword.slug.includes('rooftop')) {
-    specificContent = `
-      <h3 class="text-xl font-semibold mb-3">Romance Under the Stars</h3>
-      <p class="mb-4">Experience the magic of dining under the open sky with our exclusive <strong>${kw}</strong> arrangements in ${city}. Our rooftop venues offer breathtaking views of the city skyline, creating a stunning backdrop for your romantic evening.</p>
-      
-      <p class="mb-4">A ${kw} combines the best of outdoor dining with privacy and luxury. Imagine gazing at the stars while enjoying a gourmet meal with your beloved, surrounded by elegant decorations and the city lights twinkling in the distance. It's an experience that defines romance.</p>
     `;
   } else {
     specificContent = `
@@ -368,7 +361,7 @@ function generateFAQs(domain: DomainConfig, keyword: KeywordConfig): FAQ[] {
     },
     {
       question: `What venues do you offer for ${kw} in ${city}?`,
-      answer: `We have partnerships with exclusive venues across ${city}, including private dining spaces, rooftop restaurants, poolside areas, beach-view locations, and intimate cafes. We can also transform your preferred location or even set up at your home or apartment.`,
+      answer: `We have partnerships with exclusive venues across ${city}, including private dining spaces, outdoor venues, poolside areas, beach-view locations, and intimate cafes. We can also transform your preferred location or even set up at your home or apartment.`,
     },
     {
       question: `What is the price range for ${kw}?`,
@@ -406,7 +399,6 @@ function generateImages(domain: DomainConfig, keyword: KeywordConfig): ImageData
   if (keyword.slug.includes('birthday')) imageCategory = 'birthday-surprise';
   else if (keyword.slug.includes('anniversary')) imageCategory = 'anniversary';
   else if (keyword.slug.includes('candlelight')) imageCategory = 'candlelight-dinner';
-  else if (keyword.slug.includes('rooftop')) imageCategory = 'rooftop-dining';
   else if (keyword.slug.includes('proposal')) imageCategory = 'proposal';
   
   return [

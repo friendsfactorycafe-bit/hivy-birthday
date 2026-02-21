@@ -41,21 +41,21 @@ export interface FFCAreaContent {
 // ==================== BIRTHDAY OPENING STYLES ====================
 
 const birthdayOpenings = [
-  (kw: string, city: string, venue: string) => `Looking for the perfect ${kw.toLowerCase()} in ${city}? You've found the best! ${venue} specializes in creating magical birthday moments for couples. Whether you're planning a surprise for your partner or celebrating together, our private rooftop venue transforms birthdays into unforgettable romantic experiences.`,
+  (kw: string, city: string, venue: string) => `Looking for the perfect ${kw.toLowerCase()} in ${city}? You've found the best! ${venue} specializes in creating magical birthday moments for couples. Whether you're planning a surprise for your partner or celebrating together, our private venue transforms birthdays into unforgettable romantic experiences.`,
   
   (kw: string, city: string, venue: string) => `Birthdays are special, but when it's your partner's birthday, it becomes extraordinary! At ${venue} in ${city}, we help couples create the most romantic ${kw.toLowerCase()} experiences. Picture stunning decorations, delicious food, and complete privacy for your celebration.`,
   
   (kw: string, city: string, venue: string) => `Want to make their birthday absolutely magical? ${venue} is ${city}'s premier destination for ${kw.toLowerCase()} celebrations. We've helped over 3,000 couples celebrate birthdays in the most romantic way possible, and we're ready to help you too!`,
   
-  (kw: string, city: string, venue: string) => `The best gift you can give your partner is an experience they'll never forget. At ${venue}, we create stunning ${kw.toLowerCase()} setups that take their breath away. Located in ${city}, our private rooftop venue has become the favorite for couples seeking something truly special.`,
+  (kw: string, city: string, venue: string) => `The best gift you can give your partner is an experience they'll never forget. At ${venue}, we create stunning ${kw.toLowerCase()} setups that take their breath away. Located in ${city}, our private venue has become the favorite for couples seeking something truly special.`,
   
   (kw: string, city: string, venue: string) => `Every couple deserves a magical birthday celebration! ${venue} brings romance and celebration together in ${city}'s most beautiful private venue. Our ${kw.toLowerCase()} services have earned us a 4.9★ rating from hundreds of happy couples.`,
   
-  (kw: string, city: string, venue: string) => `Searching for the perfect ${kw.toLowerCase()} venue in ${city}? Look no further! ${venue} offers the most romantic private rooftop experience for couple birthdays. From surprise setups to elegant decorations, we make every birthday unforgettable.`,
+  (kw: string, city: string, venue: string) => `Searching for the perfect ${kw.toLowerCase()} venue in ${city}? Look no further! ${venue} offers the most romantic private experience for couple birthdays. From surprise setups to elegant decorations, we make every birthday unforgettable.`,
   
   (kw: string, city: string, venue: string) => `Make their birthday the best day of the year! ${venue} in ${city} creates personalized ${kw.toLowerCase()} experiences that leave couples speechless. Our stunning decorations, complimentary cake, and private ambiance set the perfect stage for romance.`,
   
-  (kw: string, city: string, venue: string) => `Birthday celebrations just got more romantic! ${venue} is ${city}'s top choice for ${kw.toLowerCase()} experiences. Imagine your partner walking into a beautifully decorated private rooftop, fairy lights twinkling, their favorite music playing – that's what we create!`
+  (kw: string, city: string, venue: string) => `Birthday celebrations just got more romantic! ${venue} is ${city}'s top choice for ${kw.toLowerCase()} experiences. Imagine your partner walking into a beautifully decorated private venue, fairy lights twinkling, their favorite music playing – that's what we create!`
 ];
 
 // ==================== KEYWORD-SPECIFIC CONTENT ====================
@@ -65,7 +65,7 @@ const keywordContentMap: { [key: string]: { intro: string; sections: FFCContentS
   'boyfriend': {
     intro: `Planning a birthday surprise for your boyfriend? At HIVY, we understand what makes men feel special. Our boyfriend birthday setups combine romance with a cool, comfortable vibe he'll love.
 
-Your boyfriend deserves more than a regular dinner out. Our private rooftop venue gives you both the space to celebrate away from the world. The stunning decorations, delicious food, and complete privacy create the perfect birthday atmosphere. Watch his face light up as he sees the setup you planned just for him!`,
+Your boyfriend deserves more than a regular dinner out. Our private venue gives you both the space to celebrate away from the world. The stunning decorations, delicious food, and complete privacy create the perfect birthday atmosphere. Watch his face light up as he sees the setup you planned just for him!`,
     sections: [
       {
         heading: "What Makes Boyfriend Birthday Surprises Special at HIVY",
@@ -87,7 +87,7 @@ Your boyfriend deserves more than a regular dinner out. Our private rooftop venu
 
 **Step 1 - Secret Planning**: Contact us via WhatsApp without your boyfriend knowing. We'll guide you through every detail of his birthday surprise – from setup options to timing coordination.
 
-**Step 2 - Choose His Style**: Select from our packages based on what your boyfriend would love. Some guys prefer dramatic tent setups, others like the elegant rooftop ambiance.
+**Step 2 - Choose His Style**: Select from our packages based on what your boyfriend would love. Some guys prefer dramatic tent setups, others like the elegant candlelit ambiance.
 
 **Step 3 - Create a Cover Story**: We help you plan a believable reason to bring him to the venue on his birthday. Many girlfriends say they're going for "dinner" or "a drive."
 
@@ -102,7 +102,7 @@ Your boyfriend deserves more than a regular dinner out. Our private rooftop venu
   'girlfriend': {
     intro: `Want to make your girlfriend feel like a queen on her birthday? HIVY creates the most romantic girlfriend birthday celebrations in Surat. From dreamy decorations to Instagram-worthy setups, we ensure her birthday is absolutely magical.
 
-Your girlfriend's birthday deserves more than ordinary. Our private rooftop transforms into a fairytale setting with fairy lights, flowers, balloons, and romantic ambiance. The moment she walks in, she'll know just how special she is to you!`,
+Your girlfriend's birthday deserves more than ordinary. Our private venue transforms into a fairytale setting with fairy lights, flowers, balloons, and romantic ambiance. The moment she walks in, she'll know just how special she is to you!`,
     sections: [
       {
         heading: "Creating Dream Birthday Celebrations for Girlfriends",
@@ -139,7 +139,7 @@ Your girlfriend's birthday deserves more than ordinary. Our private rooftop tran
   'husband': {
     intro: `Your husband has stood by you through everything – his birthday deserves something extraordinary! HIVY creates meaningful husband birthday celebrations that go beyond the ordinary. Let us help you show him just how much he means to you.
 
-Marriage is a beautiful journey, and birthdays are perfect milestones to celebrate together. Our private rooftop venue provides the intimate setting you need to express your love and make his birthday truly special.`,
+Marriage is a beautiful journey, and birthdays are perfect milestones to celebrate together. Our private venue provides the intimate setting you need to express your love and make his birthday truly special.`,
     sections: [
       {
         heading: "Celebrating Your Husband's Birthday in Style",
@@ -176,7 +176,7 @@ Marriage is a beautiful journey, and birthdays are perfect milestones to celebra
   'wife': {
     intro: `She makes your life beautiful every day – her birthday is your chance to return the love! HIVY creates the most romantic wife birthday celebrations in Surat. Let us help you plan an evening that shows her she's the most important person in your world.
 
-Your wife deserves to feel special, cherished, and celebrated. Our private rooftop venue transforms into a magical space where you can honor her with the love and attention she truly deserves.`,
+Your wife deserves to feel special, cherished, and celebrated. Our private venue transforms into a magical space where you can honor her with the love and attention she truly deserves.`,
     sections: [
       {
         heading: "Making Your Wife Feel Like a Queen on Her Birthday",
@@ -196,7 +196,7 @@ Your wife deserves to feel special, cherished, and celebrated. Our private rooft
         heading: "Planning the Perfect Wife Birthday Surprise",
         content: `Create magic with our wife birthday surprise planning tips:
 
-**Know Her Dreams**: What has she always wanted? A rooftop dinner under stars? A flower-filled celebration? We help you translate her dreams into her birthday reality.
+**Know Her Dreams**: What has she always wanted? A romantic dinner under stars? A flower-filled celebration? We help you translate her dreams into her birthday reality.
 
 **Include Her Favorites**: Her favorite flowers, colors, songs, and foods – we incorporate everything she loves into her wife birthday celebration.
 
@@ -211,7 +211,7 @@ Your wife deserves to feel special, cherished, and celebrated. Our private rooft
 
   // For decoration keywords
   'decoration': {
-    intro: `Looking for stunning birthday decoration in Surat? HIVY creates the most beautiful, Instagram-worthy birthday decoration setups for couples. Our professional team transforms our private rooftop into a magical celebration space that will take your breath away.
+    intro: `Looking for stunning birthday decoration in Surat? HIVY creates the most beautiful, Instagram-worthy birthday decoration setups for couples. Our professional team transforms our private venue into a magical celebration space that will take your breath away.
 
 Birthday decoration is an art, and at HIVY, we've mastered it. From elegant balloon arrangements to romantic fairy light canopies, our decoration setups create the perfect backdrop for your couple birthday celebration.`,
     sections: [
@@ -248,7 +248,7 @@ Birthday decoration is an art, and at HIVY, we've mastered it. From elegant ball
 
   // For venue/places keywords
   'venue': {
-    intro: `Searching for the best birthday venue for couples in Surat? HIVY is your answer! Our private rooftop venue is specifically designed for romantic couple birthday celebrations. Unlike regular restaurants or banquet halls, we offer an exclusive, intimate experience perfect for two.
+    intro: `Searching for the best birthday venue for couples in Surat? HIVY is your answer! Our private venue is specifically designed for romantic couple birthday celebrations. Unlike regular restaurants or banquet halls, we offer an exclusive, intimate experience perfect for two.
 
 When you book HIVY as your birthday venue, you get complete privacy, stunning decorations, delicious food, and attentive service – all in one package. No sharing space, no interruptions, just your perfect birthday celebration.`,
     sections: [
@@ -258,7 +258,7 @@ When you book HIVY as your birthday venue, you get complete privacy, stunning de
 
 **100% Private**: Unlike other birthday venues where you share space, our entire setup is exclusively yours. Complete privacy for your celebration.
 
-**Rooftop Experience**: Our open rooftop birthday venue offers stunning views and fresh air – something indoor venues can't match.
+**Open-Air Experience**: Our beautiful open-air birthday venue offers stunning ambiance and fresh air – something indoor venues can't match.
 
 **All-Inclusive**: Our birthday venue packages include decorations, food, music, and cake. No running around to arrange different elements.
 
@@ -299,7 +299,7 @@ Imagine the clock striking twelve, surrounded by beautiful decorations, cutting 
 
 **First Wish Privilege**: Be the first person to wish your partner at exactly 12 AM. That midnight birthday moment is incredibly meaningful.
 
-**Extra Romantic**: There's something undeniably romantic about midnight birthday celebrations under the starlit rooftop.
+**Extra Romantic**: There's something undeniably romantic about midnight birthday celebrations under the starlit sky.
 
 **12 AM Cake Cutting**: Cut the birthday cake at the exact moment of their birthday. Our midnight birthday setups are designed for this magical ritual.
 
@@ -365,7 +365,7 @@ The look on their face when they see the setup – that's what makes surprise bi
 
   // For party keywords
   'party': {
-    intro: `Looking for an intimate birthday party venue for couples in Surat? HIVY offers the perfect setting for a two-person birthday party that's far more romantic than any regular celebration! Forget crowded party venues – our private rooftop creates an exclusive birthday party atmosphere.
+    intro: `Looking for an intimate birthday party venue for couples in Surat? HIVY offers the perfect setting for a two-person birthday party that's far more romantic than any regular celebration! Forget crowded party venues – our private venue creates an exclusive birthday party atmosphere.
 
 At HIVY, your couple birthday party is all about you two. Premium decorations, delicious food, romantic music, and complete privacy – everything you need for the perfect intimate birthday party.`,
     sections: [
@@ -404,7 +404,7 @@ At HIVY, your couple birthday party is all about you two. Premium decorations, d
 
   // For romantic keywords
   'romantic': {
-    intro: `Looking for a truly romantic birthday celebration? HIVY creates the most romantic birthday experiences in Surat! Our private rooftop venue, stunning decorations, and intimate ambiance set the perfect stage for romance on your partner's special day.
+    intro: `Looking for a truly romantic birthday celebration? HIVY creates the most romantic birthday experiences in Surat! Our private venue, stunning decorations, and intimate ambiance set the perfect stage for romance on your partner's special day.
 
 Romance is at the heart of everything we do. When you celebrate a birthday at HIVY, you're not just marking another year – you're creating a deeply romantic memory that you'll cherish forever.`,
     sections: [
@@ -482,7 +482,7 @@ Birthday planning can be stressful – finding a venue, arranging decorations, o
 
   // For dinner keywords
   'dinner': {
-    intro: `Looking for the perfect birthday dinner experience in Surat? HIVY creates unforgettable romantic birthday dinners for couples! Imagine a private rooftop, beautiful decorations, delicious food, and your partner – that's the birthday dinner experience at our venue.
+    intro: `Looking for the perfect birthday dinner experience in Surat? HIVY creates unforgettable romantic birthday dinners for couples! Imagine a private venue, beautiful decorations, delicious food, and your partner – that's the birthday dinner experience at our venue.
 
 Unlike regular restaurant birthday dinners, HIVY offers complete privacy and a curated romantic experience. Your birthday dinner is exclusively for you two – no other diners, no interruptions.`,
     sections: [
@@ -523,7 +523,7 @@ Unlike regular restaurant birthday dinners, HIVY offers complete privacy and a c
   'private': {
     intro: `Looking for a private birthday celebration venue in Surat? HIVY offers 100% private birthday experiences exclusively for couples! No shared spaces, no other customers – just you, your partner, and the romantic celebration you deserve.
 
-Privacy is our promise. When you book a birthday at HIVY, the entire rooftop setup is exclusively yours. Celebrate without worrying about strangers, interruptions, or uncomfortable situations. Complete privacy for complete romance!`,
+Privacy is our promise. When you book a birthday at HIVY, the entire venue setup is exclusively yours. Celebrate without worrying about strangers, interruptions, or uncomfortable situations. Complete privacy for complete romance!`,
     sections: [
       {
         heading: "What Private Birthday Celebrations Mean at HIVY",
@@ -578,7 +578,7 @@ Luxury doesn't have to be stuffy. At HIVY, our luxury birthday celebrations comb
 
 **Elegant Service**: Professional, unobtrusive service ensures your luxury birthday runs smoothly.
 
-**Beautiful Venue**: Our rooftop venue provides a stunning backdrop for luxury birthday celebrations.
+**Beautiful Venue**: Our private venue provides a stunning backdrop for luxury birthday celebrations.
 
 **Complimentary Extras**: Luxury birthdays include complimentary cake, champagne (non-alcoholic), and more.`
       },
@@ -802,7 +802,7 @@ The best gift is an experience, not a thing. At HIVY, we've crafted birthday exp
 
   // Default for other keywords
   'default': {
-    intro: `Looking for the perfect birthday celebration experience in Surat? HIVY offers premium birthday celebration services for couples! Our private rooftop venue creates the ideal setting for romantic birthday moments that you'll cherish forever.
+    intro: `Looking for the perfect birthday celebration experience in Surat? HIVY offers premium birthday celebration services for couples! Our private venue creates the ideal setting for romantic birthday moments that you'll cherish forever.
 
 Every birthday celebration at HIVY is unique because every couple is unique. Tell us your vision, and we'll create a birthday experience that exceeds your expectations. From decorations to food to ambiance – we handle everything!`,
     sections: [
@@ -918,7 +918,7 @@ ${contentTemplate.intro.replace(/HIVY/g, venue).replace(/Surat/g, city)}`;
   const whyChooseUs = [
     `100% private ${kwLower} venue – exclusively for couples`,
     `5 unique birthday themes available`,
-    `Stunning rooftop venue with city views`,
+    `Stunning private venue with beautiful ambiance`,
     `All-inclusive packages with food, decorations, music`,
     `Complimentary birthday cake included`,
     `Professional setup handled by our team`,
@@ -938,7 +938,7 @@ ${contentTemplate.intro.replace(/HIVY/g, venue).replace(/Surat/g, city)}`;
 
   // Generate testimonials
   const testimonials = [
-    `"My ${contentKey === 'boyfriend' ? 'boyfriend' : contentKey === 'husband' ? 'husband' : 'partner'}'s ${kwLower} at ${venue} was beyond amazing! The rooftop setup exceeded all expectations!" – Happy Couple, ${city}`,
+    `"My ${contentKey === 'boyfriend' ? 'boyfriend' : contentKey === 'husband' ? 'husband' : 'partner'}'s ${kwLower} at ${venue} was beyond amazing! The beautiful setup exceeded all expectations!" – Happy Couple, ${city}`,
     `"Planned my ${contentKey === 'girlfriend' ? 'girlfriend' : contentKey === 'wife' ? 'wife' : 'partner'}'s ${kwLower} here and she couldn't stop smiling. Simply magical!" – Celebrating Partner`,
     `"Best ${kwLower} experience in ${city}! The team was incredibly helpful with everything!" – Satisfied Customer`
   ];
@@ -957,7 +957,7 @@ ${contentTemplate.intro.replace(/HIVY/g, venue).replace(/Surat/g, city)}`;
     },
     {
       question: `Is the ${kwLower} venue completely private?`,
-      answer: `Yes, 100% private! No other guests will be present during your 3-hour ${kwLower} slot. The entire rooftop space is exclusively yours.`
+      answer: `Yes, 100% private! No other guests will be present during your 3-hour ${kwLower} slot. The entire venue space is exclusively yours.`
     },
     {
       question: `What food is included in the ${kwLower} package?`,
@@ -1000,11 +1000,11 @@ export function generateAreaPageContent(area: AreaConfig): FFCAreaContent {
   const variationIndex = Math.abs(hashCode) % 5;
   
   const openings = [
-    `Looking for birthday surprise venues near ${areaName}? ${venue} is the top choice for couples from ${areaName} seeking magical birthday celebrations! Just a short drive from ${areaName}, our private rooftop venue creates unforgettable birthday moments.`,
+    `Looking for birthday surprise venues near ${areaName}? ${venue} is the top choice for couples from ${areaName} seeking magical birthday celebrations! Just a short drive from ${areaName}, our private venue creates unforgettable birthday moments.`,
     
     `${areaName} couples, your perfect birthday celebration is just minutes away! ${venue} has been delighting couples from ${areaName} with stunning birthday surprise setups. Come experience the magic!`,
     
-    `Planning a birthday surprise in ${areaName}? While we're located in Adajan, couples from ${areaName} love celebrating at ${venue}! Our romantic rooftop venue is worth the short drive for the most special birthday experience.`,
+    `Planning a birthday surprise in ${areaName}? While we're located in Adajan, couples from ${areaName} love celebrating at ${venue}! Our romantic private venue is worth the short drive for the most special birthday experience.`,
     
     `From ${areaName} to romantic birthday celebrations – the journey is short but the memories last forever! ${venue} welcomes couples from ${areaName} to experience our premium birthday surprise services.`,
     

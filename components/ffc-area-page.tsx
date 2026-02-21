@@ -53,7 +53,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
                 Birthday Surprise Planners Near {area.name}
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
-                Create magical birthday memories for your partner with HIVY! Stunning decorations, romantic ambiance & private rooftop celebrations for {area.name} couples.
+                Create magical birthday memories for your partner with HIVY! Stunning decorations, romantic ambiance & private celebrations for {area.name} couples.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -82,14 +82,9 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
               </div>
             </div>
             
-            {/* Hero Visual */}
-            <div className="hidden lg:flex justify-center">
-              <div className="w-72 h-72 rounded-full bg-white/10 flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-6xl block mb-2">🎂</span>
-                  <span className="text-2xl font-serif">{area.name}</span>
-                </div>
-              </div>
+            {/* Hero Booking Form */}
+            <div className="hidden lg:block">
+              <FFCBookingForm variant="hero" pageTitle={`${area.name} Area Page`} />
             </div>
           </div>
         </div>
