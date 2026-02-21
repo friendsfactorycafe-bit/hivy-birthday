@@ -1076,3 +1076,14 @@ export function getAllBlogPosts(): BlogPost[] {
 export function getBlogsByCategory(category: string): BlogPost[] {
   return blogPosts.filter(b => b.category === category);
 }
+
+// ==================== AREA META HELPERS ====================
+// Generate birthday-specific meta titles and descriptions for area pages
+
+export function getAreaMetaTitle(area: AreaConfig): string {
+  return `Birthday Surprise in ${area.name}, Surat | HIVY - Place for Celebrations`;
+}
+
+export function getAreaMetaDescription(area: AreaConfig): string {
+  return `Plan the perfect birthday surprise in ${area.name}, Surat at HIVY - Place for Celebrations. Romantic decorations, celebration cake, and private rooftop venue for couples.`;
+}

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ChevronRight, Star, Check, Phone, MessageCircle, MapPin, Heart, Gift } from 'lucide-react';
+import { ChevronRight, Star, Check, Phone, MessageCircle, MapPin, Heart, Gift, Cake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -11,12 +11,16 @@ import { FFCHeader, FFCFooter } from '@/components/ffc-layout';
 import { FFCBookingForm, FFCWhatsAppFloat, FFCBookNowButton } from '@/components/ffc-booking-form';
 import { FFCGalleryCompact } from '@/components/ffc-gallery';
 import { AreaConfig, getVisiblePackages, serviceCategories, suratAreas, siteConfig, formatPrice } from '@/lib/ffc-config';
+import { generateAreaPageContent } from '@/lib/ffc-unique-content';
 
 interface AreaPageProps {
   area: AreaConfig;
 }
 
 export default function FFCAreaPage({ area }: AreaPageProps) {
+  // Get unique content for this area
+  const uniqueContent = generateAreaPageContent(area);
+  
   // Get nearby areas (excluding current)
   const nearbyAreas = suratAreas.filter(a => a.slug !== area.slug).slice(0, 8);
 
@@ -43,13 +47,13 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
-                <MapPin className="h-4 w-4 mr-2" /> {area.name}, Surat
+                <Cake className="h-4 w-4 mr-2" /> Birthday Surprises in {area.name}
               </Badge>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-serif">
-                Romantic Celebrations in {area.name}
+                Birthday Surprise Planners Near {area.name}
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
-                HIVY - Place for Celebrations brings premium romantic celebration experiences to couples in {area.name}, Surat. Book birthday surprises, candlelight dinners, anniversaries & more!
+                Create magical birthday memories for your partner with HIVY! Stunning decorations, romantic ambiance & private rooftop celebrations for {area.name} couples.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -67,10 +71,10 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
               
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <span className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-sm">
-                  <Star className="h-4 w-4" /> 4.9★ Rating
+                  <Star className="h-4 w-4" /> 4.9★ Birthday Venue
                 </span>
                 <span className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-sm">
-                  <Check className="h-4 w-4" /> 100% Private
+                  <Cake className="h-4 w-4" /> Cake Included
                 </span>
                 <span className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-sm">
                   <Heart className="h-4 w-4" /> Couples Only
@@ -82,7 +86,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
             <div className="hidden lg:flex justify-center">
               <div className="w-72 h-72 rounded-full bg-white/10 flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin className="h-16 w-16 mx-auto mb-2" />
+                  <span className="text-6xl block mb-2">🎂</span>
                   <span className="text-2xl font-serif">{area.name}</span>
                 </div>
               </div>
@@ -91,33 +95,31 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
         </div>
       </section>
 
-      {/* Services in This Area */}
+      {/* Birthday Services in This Area */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 font-serif">
-              Our Services in {area.name}
+              Birthday Services for {area.name} Couples
             </h2>
             <p className="text-gray-600">
-              All celebration services available for couples in {area.name}
+              All birthday celebration services available for couples near {area.name}
             </p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {serviceCategories.map((service) => (
-              <Link key={service.slug} href={`/services/${service.slug}`}>
-                <Card className="h-full hover:shadow-lg transition-all border-rose-100 group text-center">
-                  <CardContent className="p-4 md:p-6">
-                    <span className="text-4xl md:text-5xl mb-3 md:mb-4 block">{service.emoji}</span>
-                    <h3 className="font-semibold text-sm md:text-lg mb-1 md:mb-2 group-hover:text-rose-700 transition-colors line-clamp-2">
-                      {service.name}
-                    </h3>
-                    <p className="text-gray-600 text-xs md:text-sm line-clamp-1 hidden md:block">
-                      in {area.name}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
+            {uniqueContent.servicesList.map((service, index) => (
+              <Card key={index} className="h-full hover:shadow-lg transition-all border-rose-100 group text-center">
+                <CardContent className="p-4 md:p-6">
+                  <span className="text-4xl md:text-5xl mb-3 md:mb-4 block">🎂</span>
+                  <h3 className="font-semibold text-sm md:text-lg mb-1 md:mb-2 group-hover:text-rose-700 transition-colors line-clamp-2">
+                    {service}
+                  </h3>
+                  <p className="text-gray-600 text-xs md:text-sm line-clamp-1 hidden md:block">
+                    in {area.name}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -131,33 +133,29 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
             <div className="lg:col-span-2">
               <article className="prose prose-lg max-w-none">
                 <h2 className="text-2xl font-bold mb-6 font-serif">
-                  Romantic Celebrations Near {area.name}
+                  Birthday Celebrations for {area.name} Couples
                 </h2>
                 
-                <p className="text-gray-600 mb-6">
-                  Are you looking for the perfect romantic celebration venue near {area.name}, Surat? HIVY - Place for Celebrations is your destination for creating unforgettable moments with your loved one.
-                </p>
+                {/* Unique Introduction */}
+                <div className="text-gray-600 mb-6 whitespace-pre-line">
+                  {uniqueContent.introduction}
+                </div>
 
-                <p className="text-gray-600 mb-6">
-                  Whether you're celebrating a birthday, anniversary, proposal, or simply want a romantic candlelight dinner, our venue offers stunning rooftop setups and elegant glass houses that provide the perfect ambiance for your special moments.
-                </p>
+                {/* Unique Content Sections */}
+                {uniqueContent.sections.map((section, index) => (
+                  <div key={index} className="mb-8">
+                    <h3 className="text-xl font-bold mb-4">{section.heading}</h3>
+                    <div className="text-gray-600 whitespace-pre-line">{section.content}</div>
+                  </div>
+                ))}
 
                 <div className="bg-white rounded-xl p-6 mb-8">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                    <Gift className="h-5 w-5 text-rose-700" />
-                    What We Offer in {area.name}
+                    <Cake className="h-5 w-5 text-rose-700" />
+                    Birthday Services for {area.name} Couples
                   </h3>
                   <div className="grid md:grid-cols-2 gap-3">
-                    {[
-                      "Birthday Surprise Celebrations",
-                      "Candlelight Dinner Dates",
-                      "Anniversary Celebrations",
-                      "Romantic Proposal Setups",
-                      "Surprise Date Nights",
-                      "Pre-Wedding Photoshoots",
-                      "Baby Moment Celebrations",
-                      "Custom Celebrations"
-                    ].map((item, index) => (
+                    {uniqueContent.servicesList.map((item, index) => (
                       <div key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-rose-700 flex-shrink-0" />
                         <span className="text-gray-700">{item}</span>
@@ -166,34 +164,27 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold mb-4">
-                  Why Couples in {area.name} Love Us
-                </h3>
-                
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-3">
-                    <span className="text-rose-700 font-bold">•</span>
-                    <span><strong>Convenient Location:</strong> Easy access from {area.name} and all parts of Surat.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-rose-700 font-bold">•</span>
-                    <span><strong>100% Privacy:</strong> Your celebration is completely private with exclusive booking.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-rose-700 font-bold">•</span>
-                    <span><strong>6 Unique Setups:</strong> Choose from rooftop and glass house experiences.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-rose-700 font-bold">•</span>
-                    <span><strong>All-Inclusive Packages:</strong> Food, decorations, music, and more included.</span>
-                  </li>
-                </ul>
+                {/* Local Tips */}
+                <div className="bg-rose-100 rounded-xl p-6 mb-8">
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-rose-700" />
+                    Tips for {area.name} Visitors
+                  </h3>
+                  <ul className="space-y-2">
+                    {uniqueContent.localTips.map((tip, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <Check className="h-4 w-4 text-rose-700 flex-shrink-0 mt-1" />
+                        <span className="text-gray-700">{tip}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </article>
 
               {/* Packages */}
               <div className="mt-12">
                 <h2 className="text-2xl font-bold mb-6 font-serif">
-                  Popular Packages for {area.name} Couples
+                  Birthday Packages for {area.name} Couples
                 </h2>
                 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -233,7 +224,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 {/* Booking Form */}
-                <FFCBookingForm pageTitle={`${area.name} Area`} />
+                <FFCBookingForm pageTitle={`Birthday in ${area.name}`} />
 
                 {/* Quick Contact */}
                 <Card className="border-green-200 bg-green-50">
@@ -294,29 +285,12 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-bold mb-4 font-serif">
-              FAQs - Celebrations in {area.name}
+              Birthday Celebration FAQs - {area.name}
             </h2>
           </div>
           
           <Accordion type="single" collapsible className="space-y-4">
-            {[
-              {
-                question: `How do couples from ${area.name} reach HIVY - Place for Celebrations?`,
-                answer: `HIVY - Place for Celebrations is conveniently located in Surat and easily accessible from ${area.name}. You can reach us by car, auto, or cab in a short time. Contact us for exact directions.`
-              },
-              {
-                question: "Do you offer pickup services?",
-                answer: "Currently, we don't offer pickup services, but we can help guide you with the best routes from your location."
-              },
-              {
-                question: "What are the booking options available?",
-                answer: `Couples from ${area.name} can book via WhatsApp, phone call, or our online form. We recommend booking 2-3 days in advance for your preferred slot.`
-              },
-              {
-                question: "Is the venue private?",
-                answer: "Yes! Your celebration is 100% private. No other guests will be present during your booking slot."
-              }
-            ].map((faq, index) => (
+            {uniqueContent.faqContent.map((faq, index) => (
               <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border border-rose-100 px-6">
                 <AccordionTrigger className="text-left font-medium hover:no-underline">
                   {faq.question}
@@ -331,7 +305,7 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
       </section>
 
       {/* Gallery Section */}
-      <FFCGalleryCompact title={`Celebrations in ${area.name}`} maxItems={8} />
+      <FFCGalleryCompact title={`Birthday Celebrations Near ${area.name}`} maxItems={8} />
 
       <FFCFooter />
       <FFCWhatsAppFloat />
