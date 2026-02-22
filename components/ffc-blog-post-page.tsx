@@ -105,7 +105,7 @@ export default function FFCBlogPostPage({ post }: FFCBlogPostPageProps) {
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Ready to celebrate?</h3>
-                  <p className="text-gray-600 text-sm">Book your special moment at HIVY - Place for Celebrations</p>
+                  <p className="text-gray-600 text-sm">Book your special birthday moment at HIVY - Birthday Surprise Planners</p>
                 </div>
                 <div className="flex gap-3">
                   <Button 
@@ -189,57 +189,57 @@ function generateArticleContent(post: BlogPost): string {
   const contentTemplates: { [key: string]: string } = {
     'Birthday': `
       <h2>Make Their Birthday Unforgettable</h2>
-      <p>Birthdays are special occasions that deserve memorable celebrations. At HIVY - Place for Celebrations in Surat, we specialize in creating magical birthday experiences that your loved ones will cherish forever.</p>
+      <p>Birthdays are special occasions that deserve memorable celebrations. At HIVY - Birthday Surprise Planners in Surat, we specialize in creating magical birthday experiences that your loved ones will cherish forever.</p>
       
-      <h3>Why Choose a Rooftop Birthday Celebration?</h3>
-      <p>There's something magical about celebrating under the stars. Our rooftop venue offers:</p>
+      <h3>Why Choose a Private Birthday Celebration?</h3>
+      <p>There's something magical about celebrating in a private birthday venue. Our premium space offers:</p>
       <ul>
-        <li><strong>Privacy</strong> - Exclusive space just for your celebration</li>
-        <li><strong>Stunning Views</strong> - Beautiful Surat skyline as your backdrop</li>
-        <li><strong>Romantic Ambiance</strong> - Fairy lights, candles, and elegant decor</li>
-        <li><strong>Perfect Photos</strong> - Instagram-worthy setups for memories</li>
+        <li><strong>Privacy</strong> - Exclusive space just for your birthday celebration</li>
+        <li><strong>Stunning Ambiance</strong> - Beautiful Surat birthday celebration space as your backdrop</li>
+        <li><strong>Birthday Decorations</strong> - Balloon décor, fairy lights, and elegant birthday setup</li>
+        <li><strong>Perfect Photos</strong> - Instagram-worthy birthday setups for memories</li>
       </ul>
       
-      <h3>Birthday Surprise Ideas at HIVY - Place for Celebrations</h3>
+      <h3>Birthday Surprise Ideas at HIVY - Birthday Surprise Planners</h3>
       <p>From midnight surprises to elaborate themed decorations, we can help you plan the perfect birthday celebration:</p>
       <ol>
-        <li><strong>Midnight Surprise</strong> - Bring them at 11:30 PM for a cake cutting at midnight</li>
+        <li><strong>Midnight Birthday Surprise</strong> - Bring them at 11:30 PM for a cake cutting at midnight</li>
         <li><strong>Balloon Surprise</strong> - Fill the space with their favorite color balloons</li>
         <li><strong>Photo Wall</strong> - Create a memory wall with pictures of your journey together</li>
-        <li><strong>Live Music</strong> - Add romantic songs playing in the background</li>
-        <li><strong>Custom Cake</strong> - Order a personalized cake with their favorite design</li>
+        <li><strong>Birthday Music</strong> - Add celebratory songs playing in the background</li>
+        <li><strong>Custom Birthday Cake</strong> - Order a personalized cake with their favorite design</li>
       </ol>
       
       <h3>Our Birthday Packages</h3>
-      <p>We offer various packages starting from ₹6,500 that include decorations, cake, mocktails, and a private 3-hour celebration slot. Each package can be customized to match your vision.</p>
+      <p>We offer various birthday packages starting from ₹4,700 that include decorations, birthday cake, mocktails, and a private 3-hour celebration slot. Each package can be customized to match your vision.</p>
       
       <h3>Book Your Birthday Celebration</h3>
-      <p>Don't let another birthday pass by without making it special. Contact us today to book your birthday surprise at Surat's most romantic rooftop cafe.</p>
+      <p>Don't let another birthday pass by without making it special. Contact us today to book your birthday surprise at Surat's best private birthday celebration venue.</p>
     `,
     'Proposal': `
-      <h2>Planning the Perfect Proposal in Surat</h2>
-      <p>A marriage proposal is one of life's most meaningful moments. At HIVY - Place for Celebrations, we've helped countless couples create their perfect "yes" moment on our beautiful rooftop.</p>
+      <h2>Planning the Perfect Birthday Proposal in Surat</h2>
+      <p>Combining a birthday with a marriage proposal creates one of life's most meaningful moments. At HIVY - Birthday Surprise Planners, we've helped countless couples create their perfect birthday proposal moment.</p>
       
-      <h3>Why Our Rooftop is Perfect for Proposals</h3>
-      <p>The setting of your proposal matters. Here's why couples choose our venue:</p>
+      <h3>Why Our Venue is Perfect for Birthday Proposals</h3>
+      <p>The setting of your birthday proposal matters. Here's why couples choose our venue:</p>
       <ul>
         <li><strong>Complete Privacy</strong> - No other guests to interrupt your moment</li>
-        <li><strong>Romantic Setting</strong> - Fairy lights, candles, and rose petals</li>
+        <li><strong>Birthday Setting</strong> - Fairy lights, balloons, and birthday decorations</li>
         <li><strong>Stunning Backdrop</strong> - Perfect for photos and videos</li>
-        <li><strong>Weather Perfect</strong> - Open rooftop with beautiful evening skies</li>
+        <li><strong>Surprise Element</strong> - They think it's just a birthday celebration</li>
       </ul>
       
-      <h3>Proposal Setup Options</h3>
-      <p>We offer various romantic setups for your proposal:</p>
+      <h3>Birthday Proposal Setup Options</h3>
+      <p>We offer various birthday proposal setups:</p>
       <ol>
-        <li><strong>Heart Arch Setup</strong> - A beautiful heart-shaped arch decorated with flowers and lights</li>
-        <li><strong>Balloon Proposal</strong> - "Will You Marry Me?" spelled out in balloons</li>
-        <li><strong>Candlelit Path</strong> - A pathway of candles leading to the proposal spot</li>
-        <li><strong>Rose Petal Heart</strong> - A giant heart made of rose petals on the floor</li>
+        <li><strong>Heart Arch Setup</strong> - A beautiful heart-shaped arch decorated with balloons and lights</li>
+        <li><strong>Balloon Proposal</strong> - "Will You Marry Me?" spelled out with birthday decorations</li>
+        <li><strong>Birthday Path</strong> - A pathway of candles leading to the proposal spot</li>
+        <li><strong>Birthday Cake Reveal</strong> - Hide the ring in a special birthday cake cutting</li>
       </ol>
       
-      <h3>Tips for a Successful Proposal</h3>
-      <p>Based on hundreds of successful proposals at our venue, here are our top tips:</p>
+      <h3>Tips for a Successful Birthday Proposal</h3>
+      <p>Based on hundreds of successful birthday proposals at our venue:</p>
       <ul>
         <li>Book a weekday evening for more privacy</li>
         <li>Arrive early to set the mood</li>
@@ -249,58 +249,58 @@ function generateArticleContent(post: BlogPost): string {
       </ul>
       
       <h3>After the "Yes"</h3>
-      <p>Celebrate your engagement with champagne, cake, and a romantic candlelight dinner. We'll make sure your special night continues to be magical.</p>
+      <p>Celebrate your engagement with cake, mocktails, and a birthday celebration. We'll make sure your special night continues to be magical.</p>
     `,
     'Anniversary': `
-      <h2>Celebrate Your Love Story</h2>
-      <p>Every anniversary marks another beautiful chapter in your love story. Whether it's your 1st or 50th, HIVY - Place for Celebrations offers the perfect setting to celebrate your journey together.</p>
+      <h2>Birthday & Anniversary Celebration</h2>
+      <p>Celebrating both a birthday and anniversary? HIVY - Birthday Surprise Planners offers the perfect setting to celebrate these special milestones together.</p>
       
-      <h3>Why Celebrate Your Anniversary at Our Rooftop?</h3>
-      <p>An anniversary deserves more than just dinner at a regular restaurant:</p>
+      <h3>Why Celebrate at Our Venue?</h3>
+      <p>A combined birthday and anniversary deserves more than just dinner at a regular restaurant:</p>
       <ul>
-        <li><strong>Intimate Setting</strong> - Just the two of you, rekindling your romance</li>
-        <li><strong>Beautiful Decor</strong> - Romantic setup tailored to your love story</li>
-        <li><strong>Memory Making</strong> - Create new memories while celebrating old ones</li>
+        <li><strong>Intimate Setting</strong> - Just the two of you, celebrating together</li>
+        <li><strong>Beautiful Decor</strong> - Birthday and anniversary setup tailored to your story</li>
+        <li><strong>Memory Making</strong> - Create new memories while celebrating special dates</li>
         <li><strong>Special Touches</strong> - Personalized elements that show you care</li>
       </ul>
       
-      <h3>Anniversary Celebration Ideas</h3>
-      <p>Make your anniversary extra special with these ideas:</p>
+      <h3>Birthday & Anniversary Celebration Ideas</h3>
+      <p>Make your celebration extra special with these ideas:</p>
       <ol>
         <li><strong>Photo Timeline</strong> - Display photos from each year together</li>
         <li><strong>Love Letter Reading</strong> - Write and read letters to each other</li>
         <li><strong>Recreate Your First Date</strong> - Add elements from your first date</li>
-        <li><strong>Renew Your Vows</strong> - A private vow renewal ceremony</li>
-        <li><strong>Stargazing</strong> - End the night looking at stars together</li>
+        <li><strong>Birthday Cake Cutting</strong> - Custom cake for the celebration</li>
+        <li><strong>Surprise Birthday Dinner</strong> - End the night with a special dinner</li>
       </ol>
       
-      <h3>Milestone Anniversary Packages</h3>
-      <p>We offer special packages for milestone anniversaries (1st, 5th, 10th, 25th, 50th) with premium decorations, photography, and exclusive amenities.</p>
+      <h3>Special Birthday Packages</h3>
+      <p>We offer special birthday packages for milestone birthdays (18th, 21st, 30th, 40th, 50th) with premium decorations, photography, and exclusive amenities.</p>
     `,
     'Date Night': `
-      <h2>Elevate Your Date Night</h2>
-      <p>In the busy rhythm of life, date nights are essential for keeping the romance alive. Discover how to make your next date night in Surat truly special.</p>
+      <h2>Birthday Date Night</h2>
+      <p>Combine a birthday celebration with a romantic date night. Discover how to make your partner's birthday truly special at HIVY - Birthday Surprise Planners.</p>
       
-      <h3>The Perfect Date Night Checklist</h3>
-      <p>Here's what makes a date night memorable:</p>
+      <h3>The Perfect Birthday Date Night Checklist</h3>
+      <p>Here's what makes a birthday date night memorable:</p>
       <ul>
-        <li><strong>Surprise Element</strong> - Keep some details a mystery</li>
-        <li><strong>Ambiance</strong> - Choose a romantic setting</li>
+        <li><strong>Surprise Element</strong> - Keep the birthday venue a mystery</li>
+        <li><strong>Birthday Ambiance</strong> - Choose a festive, birthday-themed setting</li>
         <li><strong>Quality Time</strong> - Put away phones and be present</li>
         <li><strong>Shared Experience</strong> - Do something together, not just eat</li>
       </ul>
       
-      <h3>Romantic Date Ideas in Surat</h3>
+      <h3>Birthday Date Ideas in Surat</h3>
       <ol>
-        <li><strong>Rooftop Candlelight Dinner</strong> - Dine under the stars</li>
-        <li><strong>Sunset Viewing</strong> - Watch the sun set together</li>
-        <li><strong>Music Night</strong> - Enjoy soft romantic music</li>
-        <li><strong>Dessert Date</strong> - Share a special dessert platter</li>
-        <li><strong>Photo Date</strong> - Capture your love story</li>
+        <li><strong>Private Birthday Dinner</strong> - Dine in a birthday-decorated setting</li>
+        <li><strong>Sunset Birthday Celebration</strong> - Watch the sun set together on their birthday</li>
+        <li><strong>Birthday Music Night</strong> - Enjoy celebratory music</li>
+        <li><strong>Birthday Dessert Date</strong> - Share a special birthday cake and dessert platter</li>
+        <li><strong>Birthday Photo Date</strong> - Capture their special day</li>
       </ol>
       
-      <h3>Making It Special at HIVY - Place for Celebrations</h3>
-      <p>Our rooftop offers the perfect setting for an unforgettable date night. With customizable setups, delicious food, and a romantic atmosphere, every visit can be a new adventure in your love story.</p>
+      <h3>Making It Special at HIVY - Birthday Surprise Planners</h3>
+      <p>Our birthday venue offers the perfect setting for an unforgettable birthday date night. With customizable birthday setups, delicious food, and a celebratory atmosphere, every visit can create lasting birthday memories.</p>
     `,
     'Pre-Wedding': `
       <h2>Capturing Pre-Wedding Magic</h2>
@@ -309,17 +309,17 @@ function generateArticleContent(post: BlogPost): string {
       <h3>Best Pre-Wedding Photoshoot Locations in Surat</h3>
       <p>Surat offers beautiful backdrops for your pre-wedding shoot:</p>
       <ul>
-        <li><strong>Rooftop Venues</strong> - Skyline views and romantic lighting</li>
+        <li><strong>Private Venues</strong> - Celebration Space views and romantic lighting</li>
         <li><strong>Lakshmi Vilas Palace</strong> - Royal and majestic backdrop</li>
         <li><strong>Sayaji Garden</strong> - Natural greenery and landscapes</li>
         <li><strong>EME Temple</strong> - Unique architectural beauty</li>
       </ul>
       
-      <h3>Why Choose Our Rooftop for Pre-Wedding Shoots?</h3>
-      <p>HIVY - Place for Celebrations offers unique advantages:</p>
+      <h3>Why Choose Our Birthday Venue for Pre-Wedding Shoots?</h3>
+      <p>HIVY - Birthday Surprise Planners offers unique advantages for birthday and pre-wedding shoots:</p>
       <ol>
         <li>Complete privacy for comfortable poses</li>
-        <li>Beautiful fairy lights and decor</li>
+        <li>Beautiful fairy lights and birthday decor</li>
         <li>Golden hour and night shoot options</li>
         <li>Props and setups available</li>
         <li>Refreshments during the shoot</li>
@@ -349,8 +349,8 @@ function generateArticleContent(post: BlogPost): string {
         <li>Coordinate gifts and registry</li>
       </ol>
       
-      <h3>Why Choose HIVY - Place for Celebrations?</h3>
-      <p>Our intimate rooftop setting is perfect for baby showers with its beautiful decor, comfortable seating, and customizable setups for this special celebration.</p>
+      <h3>Why Choose HIVY - Birthday Surprise Planners?</h3>
+      <p>Our intimate birthday venue setting is perfect for baby showers and birthday celebrations with its beautiful decor, comfortable seating, and customizable setups for this special celebration.</p>
     `,
     'Baby': `
       <h2>Celebrating Precious Moments</h2>
@@ -365,7 +365,7 @@ function generateArticleContent(post: BlogPost): string {
       </ul>
       
       <h3>Planning Your Celebration</h3>
-      <p>Whether intimate with just your partner or a bigger reveal party, we can help you plan the perfect celebration at our rooftop venue.</p>
+      <p>Whether intimate with just your partner or a bigger reveal party, we can help you plan the perfect celebration at our private venue.</p>
     `,
     'Maternity': `
       <h2>Capturing the Beauty of Motherhood</h2>
@@ -383,22 +383,22 @@ function generateArticleContent(post: BlogPost): string {
       </ul>
       
       <h3>Location Tips</h3>
-      <p>Our rooftop venue offers beautiful lighting during golden hour, comfortable seating for breaks, and privacy for intimate poses.</p>
+      <p>Our private venue offers beautiful lighting during golden hour, comfortable seating for breaks, and privacy for intimate poses.</p>
     `,
     'Restaurants': `
-      <h2>Surat's Culinary Gems</h2>
-      <p>Discover the best dining experiences in Surat for your special occasions.</p>
+      <h2>Surat's Best Birthday Celebration Venues</h2>
+      <p>Discover the best birthday celebration venues in Surat for your special birthday occasions.</p>
       
-      <h3>What Makes a Restaurant Special?</h3>
+      <h3>What Makes a Birthday Venue Special?</h3>
       <ul>
-        <li><strong>Ambiance</strong> - The right mood for your occasion</li>
+        <li><strong>Ambiance</strong> - The right mood for birthday celebrations</li>
         <li><strong>Food Quality</strong> - Delicious and well-presented</li>
         <li><strong>Service</strong> - Attentive without being intrusive</li>
-        <li><strong>Privacy</strong> - Comfortable for intimate conversations</li>
+        <li><strong>Privacy</strong> - Comfortable for intimate birthday celebrations</li>
       </ul>
       
-      <h3>HIVY - Place for Celebrations: Beyond a Restaurant</h3>
-      <p>We're not just a restaurant – we're a celebration destination. Our rooftop offers private dining experiences with customizable setups for any occasion.</p>
+      <h3>HIVY - Birthday Surprise Planners: Beyond a Restaurant</h3>
+      <p>We're not just a restaurant – we're a birthday celebration destination. Our venue offers private birthday experiences with customizable setups for any birthday occasion.</p>
     `,
     'Corporate': `
       <h2>Professional Gatherings Made Special</h2>
@@ -406,7 +406,7 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>Team Building Ideas</h3>
       <ul>
-        <li>Casual rooftop lunch with team activities</li>
+        <li>Casual private lunch with team activities</li>
         <li>Celebration of achievements and milestones</li>
         <li>Welcome parties for new team members</li>
         <li>Farewell gatherings for departing colleagues</li>
@@ -472,10 +472,10 @@ function generateArticleContent(post: BlogPost): string {
       <h2>Creating Picture-Perfect Moments</h2>
       <p>Whether it's a couple shoot, family photos, or special occasion photography, location matters.</p>
       
-      <h3>Why Rooftop Photoshoots Work</h3>
+      <h3>Why Private Photoshoots Work</h3>
       <ul>
         <li>Natural lighting during golden hour</li>
-        <li>City skyline backdrop</li>
+        <li>Beautiful décor backdrop</li>
         <li>Romantic fairy light ambiance for night shots</li>
         <li>Privacy for comfortable posing</li>
       </ul>
@@ -494,8 +494,8 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>New Year Celebration Ideas</h3>
       <ul>
-        <li>Intimate rooftop dinner with countdown</li>
-        <li>Couple's celebration under the stars</li>
+        <li>Intimate private dinner with countdown</li>
+        <li>Couple's celebration in a romantic setting</li>
         <li>Small group party with friends</li>
         <li>Family gathering with special dinner</li>
       </ul>
@@ -509,14 +509,14 @@ function generateArticleContent(post: BlogPost): string {
       
       <h3>Romantic Valentine's Date Ideas</h3>
       <ul>
-        <li>Candlelight dinner on the rooftop</li>
+        <li>Birthday dinner on the private venue</li>
         <li>Surprise proposal setup</li>
         <li>Recreate your first date</li>
         <li>Exchange heartfelt letters</li>
       </ul>
       
-      <h3>Why Our Venue is Perfect</h3>
-      <p>With romantic lighting, private setting, and beautiful decor, HIVY - Place for Celebrations offers the perfect Valentine's Day backdrop.</p>
+      <h3>Why Our Birthday Venue is Perfect</h3>
+      <p>With birthday decorations, private setting, and beautiful decor, HIVY - Birthday Surprise Planners offers the perfect Valentine's Day birthday backdrop.</p>
     `,
     'Wedding': `
       <h2>Intimate Weddings: A Growing Trend</h2>
@@ -540,10 +540,10 @@ function generateArticleContent(post: BlogPost): string {
   
   // Add closing section
   content += `
-    <h2>Visit HIVY - Place for Celebrations</h2>
-    <p>Located at ${siteConfig.address}, HIVY - Place for Celebrations is Surat's premier rooftop celebration venue. We specialize in creating unforgettable moments for couples and families.</p>
+    <h2>Visit HIVY - Birthday Surprise Planners</h2>
+    <p>Located at ${siteConfig.address}, HIVY - Birthday Surprise Planners is Surat's premier private birthday celebration venue. We specialize in creating unforgettable birthday moments for couples and families.</p>
     
-    <p>Ready to plan your celebration? <strong>Call us at ${siteConfig.phone}</strong> or WhatsApp to book your special experience today.</p>
+    <p>Ready to plan your birthday celebration? <strong>Call us at ${siteConfig.phone}</strong> or WhatsApp to book your special birthday experience today.</p>
   `;
 
   return content;

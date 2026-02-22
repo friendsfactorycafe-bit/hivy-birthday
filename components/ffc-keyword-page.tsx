@@ -30,6 +30,24 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* FAQ Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": uniqueContent.faqContent.map((faq: { question: string; answer: string }) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}
+      />
       <FFCHeader />
       
       {/* Breadcrumb */}
@@ -53,13 +71,13 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
-                {service.emoji} HIVY - Place for Celebrations
+                {service.emoji} HIVY - Birthday Surprise Planners
               </Badge>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-serif">
                 {keyword.h1}
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
-                Create magical {keyword.title.toLowerCase()} moments at HIVY - Place for Celebrations. Premium romantic celebration venue with stunning setups and unforgettable experiences.
+                Create magical {keyword.title.toLowerCase()} moments at HIVY - Birthday Surprise Planners. Premium birthday celebration venue with stunning setups and unforgettable experiences.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -96,6 +114,13 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
         </div>
       </section>
 
+      {/* Mobile Booking Form */}
+      <section className="lg:hidden bg-rose-50 py-8">
+        <div className="container mx-auto px-4">
+          <FFCBookingForm pageTitle={keyword.title} />
+        </div>
+      </section>
+
       {/* Main Content */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -104,7 +129,7 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
             <div className="lg:col-span-2">
               <article className="prose prose-lg max-w-none">
                 <h2 className="text-2xl font-bold mb-6 font-serif">
-                  {keyword.title} at HIVY - Place for Celebrations
+                  {keyword.title} at HIVY - Birthday Surprise Planners
                 </h2>
                 
                 {/* Introduction - from generated content */}
@@ -119,14 +144,14 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
                   </h3>
                   <div className="grid md:grid-cols-2 gap-3">
                     {[
-                      "3 Mesmerizing Hours of Private Celebration",
-                      "Welcome Drink & Celebration Cake",
-                      "Romantic Decorations & Setup",
-                      "Candle-Lit Ambiance",
-                      "Soft Romantic Music",
-                      "Photo-Ready Backdrop",
+                      "3 Mesmerizing Hours of Private Birthday Celebration",
+                      "Welcome Drink & Birthday Cake",
+                      "Birthday Decorations & Setup",
+                      "Candle-Lit Birthday Ambiance",
+                      "Soft Celebratory Music",
+                      "Photo-Ready Birthday Backdrop",
                       "Delicious Café-Style Food",
-                      "Panoramic City Views"
+                      "Premium Birthday Party Ambiance"
                     ].map((item, index) => (
                       <div key={index} className="flex items-center gap-2">
                         <Check className="h-4 w-4 text-rose-700 flex-shrink-0" />
@@ -147,7 +172,7 @@ export default function FFCKeywordPage({ service, keyword }: KeywordPageProps) {
                 ))}
 
                 <h3 className="text-xl font-bold mb-4">
-                  Why Choose HIVY - Place for Celebrations?
+                  Why Choose HIVY - Birthday Surprise Planners?
                 </h3>
                 
                 <ul className="space-y-3 mb-8">

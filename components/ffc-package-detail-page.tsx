@@ -178,7 +178,7 @@ export default function FFCPackageDetailPage({ package: pkg }: PackageDetailPage
               {/* Tagline */}
               <div className="bg-rose-50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
                 <p className="text-rose-900 italic text-sm md:text-base">
-                  💍 {pkg.name} — where every occasion turns into a forever memory under the stars ✨🌙
+                  💍 {pkg.name} — where every occasion turns into a forever memory in a romantic setting ✨🌙
                 </p>
               </div>
 

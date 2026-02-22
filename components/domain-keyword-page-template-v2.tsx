@@ -324,7 +324,7 @@ export function DomainKeywordPageTemplateV2({ domain, keyword }: DomainKeywordPa
                 {domain.name}
               </h3>
               <p className="text-muted-foreground text-sm">
-                {cityName}'s premier destination for romantic celebrations. Creating unforgettable moments for couples since 2018.
+                {cityName}'s premier destination for birthday celebrations. Creating unforgettable birthday moments for couples since 2018.
               </p>
             </div>
             <div>

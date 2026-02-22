@@ -134,7 +134,7 @@ const jsonLd = {
       "alternateName": "HIVY Surat",
       "description": "Best romantic celebration venue in Surat, Gujarat. Birthday surprises, candlelight dinners, anniversary celebrations, proposals, pre-wedding shoots. Premium private experiences.",
       "url": "https://birthdaysurprisesurat.com",
-      "telephone": "+91-9727027278",
+      "telephone": "+91 9727027278",
       "email": "hello@birthdaysurprisesurat.com",
       "priceRange": "₹₹₹",
       "currenciesAccepted": "INR",
@@ -245,6 +245,42 @@ const jsonLd = {
               "description": "Special anniversary celebration with decorations and intimate dining"
             },
             "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Midnight Birthday Surprise",
+              "description": "Special midnight birthday celebration with decorations, cake cutting, and romantic setup"
+            },
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Birthday Room Decoration",
+              "description": "Premium balloon decorations, fairy lights, and personalized birthday setup"
+            },
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Boyfriend Birthday Surprise",
+              "description": "Romantic birthday surprise planning for boyfriend with photo decorations and personalized touches"
+            },
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Girlfriend Birthday Surprise",
+              "description": "Magical birthday surprise for girlfriend with roses, balloons, and private celebration"
+            },
+            "priceCurrency": "INR"
           }
         ]
       }
@@ -280,7 +316,7 @@ const jsonLd = {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-9727027278",
+        "telephone": "+91 9727027278",
         "contactType": "reservations",
         "areaServed": "Surat",
         "availableLanguage": ["English", "Hindi", "Gujarati"]

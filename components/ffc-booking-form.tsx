@@ -51,9 +51,9 @@ const timeSlots = [
   { value: 'evening-4-7', label: '4 PM to 7 PM (Evening - Indoor)' },
   { value: 'evening-5-8', label: '5 PM to 8 PM (Evening - Indoor)' },
   { value: 'evening-6-9', label: '6 PM to 9 PM (Evening - Indoor)' },
-  { value: 'dinner-7-10', label: '7 PM to 10 PM (Dinner - Indoor/Rooftop)' },
-  { value: 'dinner-730-1030', label: '7:30 PM to 10:30 PM (Dinner - Indoor/Rooftop)' },
-  { value: 'dinner-8-11', label: '8 PM to 11 PM (Dinner - Indoor/Rooftop)' },
+  { value: 'dinner-7-10', label: '7 PM to 10 PM (Dinner - Indoor/Private)' },
+  { value: 'dinner-730-1030', label: '7:30 PM to 10:30 PM (Dinner - Indoor/Private)' },
+  { value: 'dinner-8-11', label: '8 PM to 11 PM (Dinner - Indoor/Private)' },
 ];
 
 interface FFCBookingFormProps {

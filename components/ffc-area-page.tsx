@@ -26,6 +26,24 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* FAQ Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": uniqueContent.faqContent.map((faq: { question: string; answer: string }) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}
+      />
       <FFCHeader />
       
       {/* Breadcrumb */}
@@ -87,6 +105,13 @@ export default function FFCAreaPage({ area }: AreaPageProps) {
               <FFCBookingForm variant="hero" pageTitle={`${area.name} Area Page`} />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Mobile Booking Form */}
+      <section className="lg:hidden bg-rose-50 py-8">
+        <div className="container mx-auto px-4">
+          <FFCBookingForm pageTitle={`${area.name} Area Page`} />
         </div>
       </section>
 

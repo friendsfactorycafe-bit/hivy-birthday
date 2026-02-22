@@ -6,10 +6,34 @@ import Image from 'next/image';
 import { Camera, Play, Pause, ChevronRight, Volume2, VolumeX } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Badge } from '@/components/ui/badge';
 import { FFCHeader, FFCFooter } from '@/components/ffc-layout';
 import { FFCWhatsAppFloat, FFCBookNowButton } from '@/components/ffc-booking-form';
 import { getVisiblePackages } from '@/lib/ffc-config';
+
+const virtualTourFaqs = [
+  { question: "What is HIVY's virtual tour?", answer: "Our 360-degree virtual tour lets you explore HIVY's birthday celebration venue from anywhere. Experience the romantic ambiance, decor options, and setup spaces before booking your birthday celebration." },
+  { question: "How do I access the virtual tour?", answer: "The virtual tour is available on this page. Simply click to start and use your mouse or finger to navigate around the venue in 360 degrees." },
+  { question: "Can I see birthday decoration setups in the virtual tour?", answer: "The virtual tour shows our venue spaces where birthday decorations are set up. Contact us to see photos and videos of specific birthday package setups." },
+  { question: "Is the virtual tour exactly like the actual venue?", answer: "Yes, the virtual tour accurately represents our venue. The actual experience is even better with personalized birthday decorations, lighting, and ambiance tailored to your celebration." },
+  { question: "Can I visit HIVY in person after viewing the virtual tour?", answer: "Absolutely! We encourage in-person visits. Contact us to schedule a venue tour where you can see the space and discuss your birthday celebration plans." },
+  { question: "What should I look for in the virtual tour?", answer: "Explore the main celebration area, seating arrangements, decoration possibilities, and ambiance. Notice how spaces can be transformed for intimate birthday celebrations." },
+  { question: "How does the virtual tour help with planning?", answer: "It helps visualize your birthday celebration in our space. You can plan decoration placement, seating arrangements, and understand the romantic atmosphere you'll experience." },
+  { question: "Can I share the virtual tour with others?", answer: "Yes, share this page with friends and family to show them where you're planning your birthday celebration. It helps them understand the exclusive experience." },
+  { question: "Is the venue available for midnight birthday celebrations?", answer: "Yes! Our venue hosts midnight birthday surprises too. The romantic ambiance you see in the virtual tour looks even more magical with evening lighting." },
+  { question: "After viewing the virtual tour, how do I book?", answer: "Contact us via WhatsApp at 9727027278 or fill the booking form. Share your birthday date, preferred package, and any customizations. We'll confirm availability and guide you." }
+];
+
+const virtualTourFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": virtualTourFaqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+  }))
+};
 
 export default function FFCVirtualTourPage() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -37,7 +61,9 @@ export default function FFCVirtualTourPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(virtualTourFaqJsonLd) }} />
+      <div className="min-h-screen bg-white">
       <FFCHeader />
       
       {/* Hero Section */}
@@ -50,7 +76,7 @@ export default function FFCVirtualTourPage() {
             Virtual Tour
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Take a sneak peek into our romantic celebration spaces before you book
+            Take a sneak peek into our birthday celebration spaces before you book
           </p>
         </div>
       </section>
@@ -61,7 +87,7 @@ export default function FFCVirtualTourPage() {
           <div className="max-w-xs mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold font-serif mb-4">Watch Our Space</h2>
-              <p className="text-gray-600">Experience the magic of HIVY - Place for Celebrations</p>
+              <p className="text-gray-600">Experience the magic of HIVY - Birthday Surprise Planners</p>
             </div>
             
             {/* Vertical Video */}
@@ -205,8 +231,96 @@ export default function FFCVirtualTourPage() {
         </div>
       </section>
 
+      {/* Rich SEO Content Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <h2 className="text-3xl font-bold text-center mb-8 font-serif text-rose-800">Experience HIVY's Birthday Venue Virtually</h2>
+            
+            <p className="text-gray-700 leading-relaxed">
+              Planning a birthday celebration in Surat becomes effortless when you can explore the venue before booking. HIVY's 360-degree virtual tour offers couples and families an immersive preview of our exclusive birthday celebration spaces. Whether you're organizing a surprise birthday party, milestone celebration, or intimate gathering, our virtual tour helps you visualize exactly how your special day will unfold in our beautifully decorated venue.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Benefits of Virtual Tour Before Booking Your Birthday Celebration</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Our virtual tour eliminates guesswork from birthday planning. You can explore every corner of HIVY's celebration venue from the comfort of your home, understanding the layout, ambiance, and decoration possibilities. This preview helps you make informed decisions about package selection, seating arrangements, and customization options. Couples planning surprise birthdays find immense value in secretly exploring the venue without bringing their partner along.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">What to Explore in Our 360-Degree Virtual Tour</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Navigate through our venue to discover the main celebration area where your birthday setup will be arranged. Notice the elegant lighting fixtures that create romantic ambiance, the spacious seating arrangements perfect for intimate gatherings, and the versatile spaces that transform beautifully with balloon decorations, flower arrangements, and fairy lights. Pay attention to how natural light enters during daytime celebrations and how the space transforms into a magical setting for evening and midnight birthday surprises.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Understanding the Romantic Ambiance at HIVY</h3>
+            <p className="text-gray-700 leading-relaxed">
+              The virtual tour captures the essence of HIVY's signature romantic atmosphere. Our venue features thoughtfully designed interiors with warm color palettes, elegant furnishings, and architectural details that photograph beautifully for your celebration memories. The ambiance you experience virtually translates perfectly to your actual birthday celebration, enhanced further with personalized decorations, candles, and your chosen theme elements.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Planning Decorations and Setup Through Virtual Preview</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Use the virtual tour strategically to plan your birthday decorations. Identify wall spaces perfect for birthday banners, corners ideal for balloon arrangements, and table areas suitable for cake presentations. Understanding the spatial layout helps you communicate your vision clearly to our decoration team, ensuring the final setup exceeds your expectations. Many guests use screenshots from the virtual tour during planning discussions.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Privacy and Exclusivity of Our Birthday Venue</h3>
+            <p className="text-gray-700 leading-relaxed">
+              The virtual tour showcases our commitment to private celebrations. Unlike restaurants or shared venues, HIVY offers exclusive access during your birthday booking. The intimate spaces you explore virtually are reserved entirely for your celebration, ensuring privacy for surprise reveals, personal moments, and uninterrupted celebrations with your loved ones.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">How Virtual Tour Helps Surprise Birthday Planning</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Planning a surprise birthday becomes seamless with our virtual tour. The birthday planner can explore venues, select preferred setups, and coordinate with our team entirely through virtual preview and WhatsApp communication. No need to bring the birthday person for venue visits. Every detail from decoration placement to seating can be planned secretly, ensuring the ultimate surprise reveal when they finally experience HIVY firsthand.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Venue Transformation for Birthday Celebrations</h3>
+            <p className="text-gray-700 leading-relaxed">
+              While the virtual tour shows our base venue, imagine the transformation possible with each birthday package. Our team decorates the space with colorful balloons, fresh flowers, fairy lights, birthday banners, and themed elements based on your chosen package. The elegant venue you see virtually becomes a personalized celebration space reflecting the birthday person's preferences and your vision.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Why Couples and Families Love Online Venue Preview</h3>
+            <p className="text-gray-700 leading-relaxed">
+              HIVY's virtual tour saves time and provides convenience for busy individuals planning birthday celebrations. Families coordinating from different locations can share the virtual tour link, allowing everyone to contribute to planning decisions. Long-distance couples can explore the venue together through video calls while viewing the virtual tour, making collaborative birthday planning enjoyable despite geographical distances.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Scheduling In-Person Visits After Virtual Exploration</h3>
+            <p className="text-gray-700 leading-relaxed">
+              After exploring our virtual tour, many guests prefer scheduling an in-person visit. Contact us to arrange a venue walkthrough where you can experience the ambiance firsthand, feel the space dimensions, and discuss your birthday celebration requirements with our team. In-person visits complement the virtual tour experience, helping finalize decoration details and package customizations.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-8 mb-4 text-rose-700">Booking Process After Virtual Tour Exploration</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Once you've explored our virtual tour and are ready to book, the process is simple. Contact us via WhatsApp at 9727027278 or submit an inquiry through our booking form. Share your preferred birthday date, time slot (we offer afternoon, evening, and midnight slots), chosen package, and any customization requests. Our team will confirm availability, provide a detailed quote, and guide you through securing your booking. The virtual tour experience continues helping even after booking, as you can reference it while finalizing decoration and arrangement preferences with our team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-rose-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold font-serif mb-4">Frequently Asked Questions</h2>
+            <p className="text-gray-600">Everything you need to know about our virtual tour</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-3">
+              {virtualTourFaqs.map((faq, index) => (
+                <AccordionItem key={index} value={`faq-${index}`} className="bg-white rounded-lg border border-rose-200 px-6">
+                  <AccordionTrigger className="text-left font-medium hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
       <FFCFooter />
       <FFCWhatsAppFloat />
     </div>
+    </>
   );
 }

@@ -19,14 +19,14 @@ const reviews = [
     initial: "K",
     color: "bg-rose-600",
     date: "2 months ago",
-    review: "Best candlelight dinner experience in Surat! The decoration was stunning and staff was very helpful. Proposed here and she said YES! 💍"
+    review: "Best birthday celebration experience in Surat! The decoration was stunning and staff was very helpful. Proposed here on her birthday and she said YES! 💍"
   },
   {
     name: "Priya Shah",
     initial: "P",
     color: "bg-pink-500",
     date: "2 months ago",
-    review: "My husband surprised me here for our anniversary. The rooftop setup was magical! Highly recommend for couples! ❤️"
+    review: "My husband surprised me here for our anniversary. The private setup was magical! Highly recommend for couples! ❤️"
   },
   {
     name: "Rahul Desai",

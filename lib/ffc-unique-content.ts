@@ -196,7 +196,7 @@ Your wife deserves to feel special, cherished, and celebrated. Our private venue
         heading: "Planning the Perfect Wife Birthday Surprise",
         content: `Create magic with our wife birthday surprise planning tips:
 
-**Know Her Dreams**: What has she always wanted? A romantic dinner under stars? A flower-filled celebration? We help you translate her dreams into her birthday reality.
+**Know Her Dreams**: What has she always wanted? A romantic dinner in romantic setting? A flower-filled celebration? We help you translate her dreams into her birthday reality.
 
 **Include Her Favorites**: Her favorite flowers, colors, songs, and foods – we incorporate everything she loves into her wife birthday celebration.
 

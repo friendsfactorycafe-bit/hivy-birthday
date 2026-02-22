@@ -21,23 +21,23 @@ import { siteConfig, getVisiblePackages, serviceCategories, suratAreas, formatPr
 const experienceFeatures = [
   {
     icon: Clock,
-    title: "3-Hour Private Booking",
-    description: "Enjoy three exclusive hours at our private celebration venue for your birthday"
+    title: "3-Hour Private Birthday Booking",
+    description: "Enjoy three exclusive hours at our private birthday venue for your special celebration"
   },
   {
     icon: Gift,
     title: "Birthday Cake Included",
-    description: "Complimentary birthday cake & non-alcoholic champagne with every package"
+    description: "Complimentary birthday cake & non-alcoholic champagne with every birthday package"
   },
   {
     icon: Camera,
-    title: "Instagram-Worthy Setup",
-    description: "Professional balloon decorations, fairy lights & romantic photo-ready ambiance"
+    title: "Instagram-Worthy Birthday Décor",
+    description: "Professional balloon decorations, fairy lights & birthday-themed photo-ready setups"
   },
   {
     icon: Music,
-    title: "Romantic Ambiance",
-    description: "Soft romantic music, beautiful lighting & complete privacy for couples"
+    title: "Birthday Party Ambiance",
+    description: "Celebratory music, beautiful lighting & complete privacy for your birthday celebration"
   }
 ];
 
@@ -88,22 +88,22 @@ const faqs = [
 // Gallery items data - Optimized for faster loading (reduced to 16 items)
 const galleryItems = [
   // Featured Images from packages
-  { type: 'image', src: '/packages/swing-of-love/images/28.png', alt: 'Swing of Love Setup Surat', title: 'Swing of LOVE', subtitle: 'Premium Package', featured: true },
-  { type: 'image', src: '/packages/boho-chic/images/46.png', alt: 'BoHo Chic Setup Surat', title: 'BoHo Chic', featured: false },
-  { type: 'image', src: '/packages/fairy-tale-proposals/2.png', alt: 'Birthday Setup Surat', title: 'Magical Birthday Setup', featured: false },
-  { type: 'video', src: '/videos/InShot_20250111_162317353.mp4', alt: 'Romantic celebration video Surat', title: 'Celebration Moments', featured: false },
-  { type: 'image', src: '/packages/tent-of-romance/images/12.png', alt: 'Tent of Romance Setup Surat', title: 'Tent of Romance', featured: false },
-  { type: 'image', src: '/packages/swing-of-love/images/29.png', alt: 'Swing setup Surat', title: 'Swing Décor', featured: false },
+  { type: 'image', src: '/hivy-images/5100/2.webp', alt: 'Swing of Love Setup Surat', title: 'Swing of LOVE', subtitle: 'Premium Package', featured: true },
+  { type: 'image', src: '/hivy-images/5700/2.webp', alt: 'BoHo Chic Setup Surat', title: 'BoHo Chic', featured: false },
+  { type: 'image', src: '/hivy-images/6300/2.webp', alt: 'Birthday Setup Surat', title: 'Magical Birthday Setup', featured: false },
+  { type: 'video', src: '/videos/InShot_20250111_162317353.mp4', alt: 'Birthday celebration video Surat', title: 'Celebration Moments', featured: false },
+  { type: 'image', src: '/hivy-images/6500/2.webp', alt: 'Tent of Romance Setup Surat', title: 'Tent of Romance', featured: false },
+  { type: 'image', src: '/hivy-images/5100/3.webp', alt: 'Swing setup Surat', title: 'Swing Décor', featured: false },
   { type: 'video', src: '/videos/InShot_20250217_151234749.mp4', alt: 'Birthday celebration video Surat', title: 'Birthday Video', featured: false },
-  { type: 'image', src: '/packages/boho-chic/images/47.png', alt: 'Bohemian ambiance cafe Surat', title: 'Boho Ambiance', featured: false },
-  { type: 'image', src: '/packages/fairy-tale-proposals/3.png', alt: 'Birthday decoration Surat', title: 'Magical Setup', featured: false },
-  { type: 'image', src: '/packages/tent-of-romance/images/13.png', alt: 'Romantic tent decoration Surat', title: 'Romantic Décor', featured: false },
+  { type: 'image', src: '/hivy-images/5700/3.webp', alt: 'Bohemian ambiance cafe Surat', title: 'Boho Ambiance', featured: false },
+  { type: 'image', src: '/hivy-images/6300/3.webp', alt: 'Birthday decoration Surat', title: 'Magical Setup', featured: false },
+  { type: 'image', src: '/hivy-images/6500/3.webp', alt: 'Romantic tent decoration Surat', title: 'Romantic Décor', featured: false },
   { type: 'video', src: '/videos/VID_20251027_181020858.mp4', alt: 'Birthday celebration reel Surat', title: 'Party Vibes', featured: false },
-  { type: 'image', src: '/packages/swing-of-love/images/30.png', alt: 'Romantic swing setup Surat', title: 'Love Swing', featured: false },
-  { type: 'image', src: '/packages/boho-chic/images/48.png', alt: 'Night romantic setup Surat', title: 'Night Setup', featured: false },
-  { type: 'image', src: '/packages/fairy-tale-proposals/4.png', alt: 'Evening romantic celebration Surat', title: 'Evening Magic', featured: false },
+  { type: 'image', src: '/hivy-images/5100/4.webp', alt: 'Romantic swing setup Surat', title: 'Love Swing', featured: false },
+  { type: 'image', src: '/hivy-images/5700/4.webp', alt: 'Night romantic setup Surat', title: 'Night Setup', featured: false },
+  { type: 'image', src: '/hivy-images/6300/4.webp', alt: 'Evening birthday celebration Surat', title: 'Evening Magic', featured: false },
   { type: 'video', src: '/videos/VID_20251120_191425995.mp4', alt: 'Birthday reel Surat', title: 'Birthday Reel', featured: false },
-  { type: 'image', src: '/packages/tent-of-romance/images/14.png', alt: 'Birthday surprise setup Surat', title: 'Birthday Surprise Setup', featured: false },
+  { type: 'image', src: '/hivy-images/6500/4.webp', alt: 'Birthday surprise setup Surat', title: 'Birthday Surprise Setup', featured: false },
 ];
 
 // Gallery Section Component
@@ -125,7 +125,7 @@ function GallerySection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <Badge className="mb-4 bg-rose-100 text-rose-900 border-rose-200">
-            <ImageIcon className="h-4 w-4 mr-2" /> Romantic Celebration Gallery
+            <ImageIcon className="h-4 w-4 mr-2" /> Birthday Celebration Gallery
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
             Birthday Celebrations at HIVY Surat
@@ -328,8 +328,48 @@ export default function FFCHomePage() {
     return () => clearInterval(timer);
   }, [heroSlides.length]);
 
+  // FAQ Schema (FAQPage structured data)
+  const homeFaqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  // Speakable schema for voice assistants (Google Assistant, Siri, Alexa)
+  const speakableJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "HIVY - Birthday Surprise Planners | Best Birthday Venue in Surat",
+    "url": "https://birthdaysurprisesurat.com",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-description", ".faq-section", ".services-heading"]
+    },
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "@id": "https://birthdaysurprisesurat.com/#business"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      {/* FAQ Schema for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
+      />
+      {/* Speakable Schema for Voice Assistants & AI */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableJsonLd) }}
+      />
       <FFCHeader />
       
       {/* Hero Section */}
@@ -459,16 +499,22 @@ export default function FFCHomePage() {
                       Setup {index + 1}
                     </Badge>
                   </div>
-                  <CardContent className="p-2 md:p-4">
-                    <h3 className="font-semibold text-sm md:text-lg mb-1 group-hover:text-rose-700 transition-colors line-clamp-2">
+                  <CardContent className="p-2.5 sm:p-3 md:p-4">
+                    <h3 className="font-semibold text-xs sm:text-sm md:text-lg mb-1 group-hover:text-rose-700 transition-colors leading-tight">
                       {pkg.name}
                     </h3>
                     <p className="text-gray-600 text-xs md:text-sm line-clamp-2 mb-2 hidden md:block">
                       {pkg.shortDescription}
                     </p>
-                    <p className="text-base md:text-xl font-bold text-rose-700">
+                    <p className="text-base sm:text-lg md:text-xl font-bold text-rose-700">
                       {formatPrice(pkg.price)}
                     </p>
+                    {/* View Details */}
+                    <div className="flex justify-end mt-2">
+                      <span className="text-[10px] sm:text-xs text-rose-600 font-medium flex items-center gap-1 hover:text-rose-800">
+                        View Details <ChevronRight className="h-3 w-3" />
+                      </span>
+                    </div>
                   </CardContent>
                 </Card>
               </Link>
@@ -529,7 +575,7 @@ export default function FFCHomePage() {
               The Complete Birthday Celebration Experience
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Every couple deserves a private, romantic celebration. Our packages include everything for an unforgettable birthday surprise.
+              Every couple deserves a private birthday celebration. Our packages include everything for an unforgettable birthday surprise.
             </p>
           </div>
           
@@ -605,7 +651,7 @@ export default function FFCHomePage() {
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <Image 
                   src="/images/Food hivy.webp" 
-                  alt="HIVY - Place for Celebrations Menu - Romantic Dining Experience" 
+                  alt="HIVY - Birthday Surprise Planners Menu - Birthday Celebration Dining" 
                   width={600} 
                   height={600} 
                   className="w-full h-full object-cover rounded-2xl"
@@ -653,6 +699,55 @@ export default function FFCHomePage() {
 
       {/* Blog Section */}
       <BlogSection />
+
+      {/* Extended SEO Content Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-rose-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-8 text-rose-700">
+            Why HIVY is Surat's Best Birthday Surprise Venue
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <p className="hero-description">
+              When it comes to planning an unforgettable birthday surprise in Surat, HIVY stands out as the premier destination for couples seeking privacy, romance, and magical celebrations. As the city's most sought-after birthday surprise venue, we have redefined how people celebrate birthdays by creating an exclusive, intimate space where every detail is thoughtfully curated to make your special day truly extraordinary. Whether you're planning a midnight birthday surprise for your girlfriend, organizing a romantic birthday dinner for your husband, or creating a memorable birthday experience for your wife, HIVY offers the perfect private setting that transforms ordinary birthdays into cherished memories that last a lifetime.
+            </p>
+            <p className="hero-description">
+              What sets HIVY apart from other birthday celebration venues in Surat is our unwavering commitment to providing a completely private, couple-friendly environment where you can celebrate without interruptions. Unlike restaurants or cafes where your birthday celebration competes for attention with other diners, HIVY is exclusively yours for the entire duration of your booking. This exclusivity ensures that every moment—from the surprise reveal to the cake cutting to the heartfelt conversations—happens in complete privacy, allowing you to be fully present and authentic with your partner during this special occasion.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-rose-600">The Ultimate Birthday Surprise Experience</h3>
+            <p className="hero-description">
+              At HIVY, we believe that a birthday celebration should be more than just cutting a cake—it should be a complete sensory experience that touches the heart and creates lasting impressions. Our birthday surprise packages are meticulously designed to deliver exactly that. From the moment your partner walks through our doors, they're greeted by a breathtaking setup featuring stunning balloon decorations, twinkling fairy lights, fragrant rose petals, and Instagram-worthy backdrops that set the perfect mood for celebration. Every element is carefully arranged by our experienced team to create that jaw-dropping "wow" moment that makes birthdays truly special.
+            </p>
+            <p className="hero-description">
+              Our birthday packages include everything you need for a perfect celebration: a delicious birthday cake, complimentary non-alcoholic champagne for toasting, premium decorations tailored to your chosen theme, ambient music that sets the perfect mood, and three full hours of private access to our beautifully designed venue. We also provide dedicated setup before your arrival, ensuring that when you and your partner step inside, everything is already picture-perfect and ready for the celebration to begin. The attention to detail in our birthday setups—from the placement of candles to the arrangement of flower petals—reflects our passion for creating extraordinary experiences.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-rose-600">Midnight Birthday Celebrations in Surat</h3>
+            <p className="hero-description">
+              There's something undeniably magical about celebrating a birthday at the stroke of midnight, and HIVY has become Surat's most popular destination for midnight birthday surprises. The excitement of counting down to 12 AM, watching your loved one's face light up as they realize they're celebrating their special day in such a romantic setting, and sharing that first piece of cake as the clock strikes midnight—these are the moments that become cherished memories forever. Our midnight birthday packages are specifically designed to maximize this magical experience, with dramatic lighting effects, surprise elements, and a celebration atmosphere that perfectly captures the excitement of welcoming a new year of life.
+            </p>
+            <p className="hero-description">
+              Planning a midnight birthday surprise requires careful coordination, and our experienced team handles every aspect flawlessly. We work with you to understand your vision, coordinate the timing of your arrival, prepare the venue with all decorations and surprises in place, and ensure that the 12 AM moment is absolutely perfect. Many couples choose to add special touches like personalized messages, photo slideshows, or custom music playlists to make the midnight celebration even more meaningful. Whether you're surprising your boyfriend with his first birthday celebration as a couple or marking a milestone birthday for your girlfriend, our midnight birthday experiences create the kind of memories that become legendary in your relationship story.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-rose-600">Birthday Decorations & Themes</h3>
+            <p className="hero-description">
+              The visual impact of a birthday celebration matters enormously, and HIVY offers a variety of stunning decoration themes that transform our venue into your dream birthday setting. Our balloon decoration options range from elegant color schemes to playful, vibrant arrangements, all created with premium-quality balloons that photograph beautifully and create an immersive celebration environment. Fairy lights add a warm, magical glow that makes the space feel intimate and romantic, while rose petals scattered throughout create a sense of luxury and celebration that elevates the entire experience.
+            </p>
+            <p className="hero-description">
+              Popular birthday decoration themes at HIVY include our romantic rose gold arrangement featuring blush pinks and metallic accents, the classic red and gold setup that exudes elegance and passion, the bohemian-inspired boho chic theme with natural textures and whimsical elements, and our dramatic tent of romance setup that creates a cozy, intimate cocoon within our space. Each theme can be customized to match your partner's preferences, favorite colors, or special memories you share together. Our decoration team takes pride in creating setups that look even better in person than in photos—though rest assured, every angle is Instagram-ready for capturing those precious moments.
+            </p>
+
+            <h3 className="text-2xl font-semibold text-rose-600">Creating Lifelong Birthday Memories</h3>
+            <p className="hero-description">
+              Beyond the decorations and the cake, what truly makes a birthday celebration at HIVY special is the emotional impact it creates. The surprise reveal moment when your partner first sees the beautiful setup, the tears of joy, the tight embrace, the heartfelt "I can't believe you did this"—these are the priceless moments that our venue is designed to facilitate. We've witnessed countless birthday surprises at HIVY, and each one reminds us why we are passionate about what we do. Seeing couples create beautiful memories together, watching the genuine surprise and happiness on faces, and knowing that we played a part in making someone's birthday truly special—this is what drives every decision we make about our venue and services.
+            </p>
+            <p className="hero-description">
+              The privacy of HIVY allows couples to fully express their emotions without feeling self-conscious about public displays of affection or worried about strangers watching their intimate moments. Whether it's a boyfriend surprising his girlfriend with her dream birthday celebration, a husband creating a romantic birthday evening for his wife, or a wife planning an unforgettable midnight surprise for her husband, HIVY provides the perfect canvas for expressing love and appreciation through a thoughtfully planned birthday experience. Our team understands that birthdays are about celebrating not just the person but also the relationship, and we design every aspect of our service to honor both. Book your birthday surprise at HIVY today and discover why couples across Surat choose us as their preferred venue for creating magical birthday memories that last a lifetime.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section className="py-20 bg-rose-50">
