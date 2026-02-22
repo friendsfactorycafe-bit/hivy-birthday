@@ -71,19 +71,6 @@ export default function FFCAboutPage() {
       }
     }))
   };
-  // FAQ Schema for About page
-  const aboutFaqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": aboutFaqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
 
   return (
     <>
