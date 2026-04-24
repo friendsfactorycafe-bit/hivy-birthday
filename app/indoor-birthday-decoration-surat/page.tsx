@@ -1,0 +1,24 @@
+import { Metadata } from "next";
+import FFCKeywordPage from "@/components/ffc-keyword-page";
+import { getServiceBySlug } from "@/lib/ffc-config";
+
+const service = getServiceBySlug("birthday-surprise")!;
+const keyword = service.keywords.find(k => k.slug === "indoor-birthday-decoration-surat")!;
+
+export const metadata: Metadata = {
+  title: keyword?.metaTitle || "Indoor Birthday Decoration Surat | Couples Only",
+  description: keyword?.metaDescription || "Experience a indoor birthday decoration in Surat designed exclusively for couples. Book at HIVY.",
+  alternates: { canonical: "https://birthdaysurprisesurat.com/indoor-birthday-decoration-surat" },
+  openGraph: {
+    title: keyword?.metaTitle || "Indoor Birthday Decoration Surat | Couples Only",
+    description: keyword?.metaDescription || "Experience a indoor birthday decoration in Surat designed exclusively for couples. Book at HIVY.",
+    url: "https://birthdaysurprisesurat.com/indoor-birthday-decoration-surat",
+    type: "website",
+    locale: "en_IN",
+    siteName: "HIVY - Place for Celebrations",
+  },
+};
+
+export default function Page() {
+  return <FFCKeywordPage service={service} keyword={keyword} />;
+}
